@@ -1,2 +1,2 @@
-# serverless-mat
+# SLMat: serverless-mat
 ServerLess Materials Design
