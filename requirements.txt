@@ -48,3 +48,4 @@ jupyterlab-open-url-parameter
 # optonal
 ase
 jarvis-tools
+intermat
