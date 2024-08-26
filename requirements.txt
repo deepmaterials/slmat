@@ -46,3 +46,4 @@ bqplot
 
 # optonal
 ase
+jarvis-tools
