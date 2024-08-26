@@ -98,6 +98,13 @@
       {
         "extension": "./extension",
         "liteExtension": false,
+        "load": "static/remoteEntry.c7a31b7a4c60a21a3aa0.js",
+        "name": "jupyterlab-open-url-parameter",
+        "style": "./style"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
         "load": "static/remoteEntry.ce0a0ed309609d30c1cb.js",
         "mimeExtension": "./mimeExtension",
         "name": "jupyterlab-plotly"
