@@ -23,8 +23,8 @@ jobs:
           python -m pip install -r requirements.txt
       - name: Build the JupyterLite site
         run: |
-          # jupyter lite build --files content
-          jupyter lite build --contents content --output-dir dist
+          jupyter lite build --files content
+          # jupyter lite build --contents content --output-dir dist
       - name: Upload (dist)
         uses: actions/upload-artifact@v2
         with:
