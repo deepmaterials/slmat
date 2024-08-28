@@ -39,13 +39,13 @@ ipympl>=0.8.2
 ipycanvas>=0.9.1
 # Python: ipyleaflet library for Jupyter notebooks (optional)
 ipyleaflet
-
+jupyter_ai
 # Python: plotting libraries (optional)
 plotly>=5,<6
 bqplot
 jupyterlab-open-url-parameter
 
-# optonal
+# optional
 ase
 jarvis-tools
 intermat
