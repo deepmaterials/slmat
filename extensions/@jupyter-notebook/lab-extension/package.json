@@ -1,6 +1,6 @@
 {
   "name": "@jupyter-notebook/lab-extension",
-  "version": "7.2.1",
+  "version": "7.2.2",
   "description": "Jupyter Notebook - Lab Extension",
   "homepage": "https://github.com/jupyter/notebook",
   "bugs": {
@@ -43,19 +43,19 @@
     "watch:src": "tsc -w"
   },
   "dependencies": {
-    "@jupyter-notebook/application": "^7.2.1",
-    "@jupyterlab/application": "~4.2.0",
-    "@jupyterlab/apputils": "~4.3.0",
-    "@jupyterlab/coreutils": "~6.2.0",
-    "@jupyterlab/docregistry": "~4.2.0",
-    "@jupyterlab/notebook": "~4.2.0",
-    "@jupyterlab/translation": "~4.2.0",
-    "@jupyterlab/ui-components": "~4.2.0",
+    "@jupyter-notebook/application": "^7.2.2",
+    "@jupyterlab/application": "~4.2.5",
+    "@jupyterlab/apputils": "~4.3.5",
+    "@jupyterlab/coreutils": "~6.2.5",
+    "@jupyterlab/docregistry": "~4.2.5",
+    "@jupyterlab/notebook": "~4.2.5",
+    "@jupyterlab/translation": "~4.2.5",
+    "@jupyterlab/ui-components": "~4.2.5",
     "@lumino/commands": "^2.3.0",
     "@lumino/disposable": "^2.1.2"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "~4.2.0",
+    "@jupyterlab/builder": "~4.2.5",
     "rimraf": "^3.0.2",
     "typescript": "~5.0.2"
   },
@@ -67,7 +67,7 @@
     "outputDir": "../../notebook/labextension",
     "schemaDir": "schema",
     "_build": {
-      "load": "static/remoteEntry.d04be841d48ffe2a9bdd.js",
+      "load": "static/remoteEntry.04dfa589925e7e7c6a3d.js",
       "extension": "./extension",
       "style": "./style"
     }

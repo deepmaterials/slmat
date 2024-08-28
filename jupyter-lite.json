@@ -10,7 +10,14 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.d04be841d48ffe2a9bdd.js",
+        "load": "static/remoteEntry.36d7b585e57765c6b40b.js",
+        "name": "@jupyter-ai/core",
+        "style": "./style"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.04dfa589925e7e7c6a3d.js",
         "name": "@jupyter-notebook/lab-extension",
         "style": "./style"
       },
