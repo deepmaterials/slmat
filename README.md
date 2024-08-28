@@ -4,6 +4,12 @@ SLMat is a serverless, browser-based toolkit that revolutionizes computational m
 
 ![SLMat schematic](paper/slmat.png)
 
+# Try SLMat Pro
+
+Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
+
+
+
 Examples
 ---------
 
