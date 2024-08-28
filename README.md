@@ -1,8 +1,6 @@
 # SLMat: ServerLess Materials Design Toolkit
 
-SLMat package: a serverless materials design framework aimed at advancing research in the field. This tool is designed to empower researchers with a scalable, efficient, and user-friendly platform for materials design, without the need for managing server infrastructure.
-
-Whether you're working on quantum simulations, classical methods, or machine learning-driven approaches, SLMat provides a versatile solution to streamline your workflow.
+SLMat is a serverless, browser-based toolkit that revolutionizes computational materials science by offering a scalable and efficient alternative to traditional server-based platforms like Google Colab. By eliminating the need for server management and providing persistent setups, SLMat enhances productivity and security, enabling researchers to focus on innovation rather than infrastructure. The toolkit integrates seamlessly with materials databases, supports AI model development, and offers advanced features like AI-guided coding and chatbot integration. With its streamlined workflow, SLMat accelerates production time, promotes reproducibility, and democratizes access to powerful computational resources. This makes SLMat an essential tool for modern materials science, offering a versatile and cost-effective solution for researchers across various domains.
 
 
 Examples
@@ -24,7 +22,9 @@ Examples
 
 Notes: 
 
-1.  Any publicly available/hosted notebook can be launched with SLMat using `fromURL` function: [`https://deepmaterials.github.io/slmat/lab?fromURL=`](https://deepmaterials.github.io/slmat/lab?fromURL=), e.g., [`https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb`](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb)
-2.  More detailed documentation development is still work in progress, feedback/suggestions are welcome using [GitHub issues](https://github.com/deepmaterials/slmat/issues/new)
+1. If the demo takes longer to start, it maybe due to caching issue, try it in a private/in-cognito tab.
+2. Unlike `pip install` in usual jupyterlab, SLMat uses `piplite`/`micropip` package as shown in the demos.
+3.  Any publicly available/hosted notebook can be launched with SLMat using `fromURL` function: [`https://deepmaterials.github.io/slmat/lab?fromURL=`](https://deepmaterials.github.io/slmat/lab?fromURL=), e.g., [`https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb`](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb)
+4.  More detailed documentation development is still work in progress, feedback/suggestions are welcome using [GitHub issues](https://github.com/deepmaterials/slmat/issues/new)
 
 
