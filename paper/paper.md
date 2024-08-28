@@ -52,7 +52,7 @@ This schematic highlights SLMat's key features: serverless architecture with in-
 
 In the future, SLMat's capabilities can be further enhanced by integrating it with in-house computing clusters or cloud providers, offering a hybrid approach that combines the flexibility of serverless architecture with the power of dedicated computational resources.
 
-
+![SLMat schematic](https://github.com/deepmaterials/slmat/edit/main/paper/slmat.png)
 
 # References
 
