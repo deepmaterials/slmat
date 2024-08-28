@@ -19,27 +19,49 @@ bibliography: paper.bib
 
 # Summary
 
-SLMat is a serverless, browser-based toolkit that revolutionizes computational materials science by offering a scalable and efficient alternative to traditional server-based platforms like Google Colab. By eliminating the need for server management and providing persistent setups, SLMat enhances productivity and security, enabling researchers to focus on innovation rather than infrastructure. The toolkit integrates seamlessly with materials databases, supports AI model development, and offers advanced features like AI-guided coding and chatbot integration. With its streamlined workflow, SLMat accelerates production time, promotes reproducibility, and democratizes access to powerful computational resources. This makes SLMat an essential tool for modern materials science, offering a versatile and cost-effective solution for researchers across various domains.
+SLMat is a serverless, browser-based toolkit that offers a scalable and efficient alternative to traditional server-based platforms. By eliminating the need for server management and providing persistent setups, SLMat enhances productivity and security, enabling researchers to focus on innovation rather than infrastructure. The toolkit integrates seamlessly with materials databases, supports AI model development, and offers advanced features like AI-guided coding and chatbot integration. SLMat accelerates production time, promotes reproducibility, and democratizes access to computational resources, making it a versatile solution for researchers across various domains.
 
 # Statement of Need
 
-The rapid evolution of computational materials science is marked by significant advances in high-throughput simulations, machine learning (ML) models, and the extensive use of large-scale databases. As researchers continue to push the boundaries of materials discovery and design, the need for robust, flexible, and scalable computational tools becomes increasingly apparent. SLMat addresses these needs by providing a serverless, in-browser environment that simplifies the computational process while ensuring data security and reducing costs.
+The rapid evolution of computational materials science is marked by significant advances in high-throughput simulations, machine learning (ML) models, and the extensive use of large-scale databases [@schleder2019dft]. As researchers continue to push the boundaries of materials discovery and design, the need for robust, flexible, and scalable computational tools becomes increasingly apparent. Server-based platforms such as Google Colab [@bisong2019google] have become integral to this research landscape, offering powerful environments for running tutorials, complex simulations, and computational workflows. However, these platforms present challenges, including server resource management, potential latency issues, re-installations of packages for each session, and privacy concerns when handling sensitive data such as security tokens. SLMat addresses these challenges by offering a serverless materials design toolkit that is accessible directly from a web browser [@baldini2017serverless]. SLMat is based on platforms such as Pyodide and JupyterLite [@droettboom2019pyodide; @randles2017using].
 
-# Key Features
+# Progressive Web Application (PWA)
 
-1. **Serverless Architecture**: SLMat operates entirely within the user's web browser, eliminating the need for server management and providing a persistent setup that reduces re-installation times and enhances productivity.
+SLMat is built as a Progressive Web Application (PWA) [@biorn2017progressive], designed to provide a seamless and reliable user experience across various platforms, including desktops, laptops, and mobile devices. The core architecture of SLMat decouples the graphical user interface (GUI) from the computational backend, allowing for computations to be performed either locally in the browser or remotely through distributed cloud services. This design eliminates the need for server management, offering a simplified backend that reduces operational complexity and cost.
 
-2. **In-Browser Computation**: By enabling computations to be conducted directly within the browser, SLMat removes the dependency on external servers, enhancing security and responsiveness.
+One of the significant advantages of SLMat is its in-browser computing capability. By enabling computations to be conducted directly within the web browser, SLMat removes the dependency on external servers, which enhances security by keeping data local and provides a more responsive and faster user experience. This serverless approach ensures that computational resources can be dynamically scaled according to the user's needs, making SLMat suitable for a wide range of applications, from quantum simulations to AI model development.
 
-3. **Integration with Materials Design Tools and Databases**: SLMat integrates seamlessly with popular materials databases such as Materials Project and JARVIS-DFT, allowing researchers to access and analyze extensive datasets.
+# Complementing Existing Server-Based Platforms
 
-4. **AI Model Development**: SLMat supports AI-guided coding, offering real-time code suggestions and completions to streamline the development of complex models.
+While server-based platforms like Google Colab have been instrumental in advancing materials science research, they often require users to manage server resources and navigate the complexities of cloud computing environments. These platforms can introduce latency, particularly when reinstalling packages for each session, processing large datasets, or running resource-intensive simulations, and may raise privacy concerns when sensitive data is processed on remote servers.
 
-5. **Chatbot Integration**: SLMat includes a chatbot interface that assists users with navigating the platform, automating tasks, and retrieving information, making the toolkit more user-friendly.
+SLMat addresses these issues by providing a complementary serverless option. This toolkit allows researchers to perform advanced computational tasks without worrying about server management or data privacy issues. The serverless nature of SLMat ensures that users can leverage local computational resources while still benefiting from the scalability and flexibility typically associated with cloud computing. This approach reduces operational costs and accelerates production time by streamlining the computational workflow.
 
-6. **Security and Cost Efficiency**: By operating within the browser, SLMat ensures that sensitive data remains on the user's device, reducing the risk of data exposure and lowering operational costs.
+# Integration with Materials Design Tools and Databases
 
-7. **Improved Production Time and Reproducibility**: SLMat's streamlined workflow reduces the time required to set up and run simulations, promoting reproducible research and faster innovation.
+SLMat is designed to integrate seamlessly with existing materials design tools and databases, enhancing its utility for a broad range of research applications. By supporting popular materials databases [@choudhary2020joint; @jain2013commentary], SLMat enables researchers to access and analyze extensive datasets directly within the platform. This integration facilitates the combination of data from multiple sources, allowing for comprehensive analyses and the identification of new materials with optimized properties.
+
+In addition to database integration, SLMat supports the use of advanced materials design tools [@larsen2017atomic; @choudhary2024intermat], enabling researchers to perform simulations, molecular dynamics studies, and other computational experiments with ease. The platform's flexibility allows it to be used in conjunction with other tools, such as scikit-learn [@pedregosa2011scikit], ensuring that researchers can incorporate these resources into their workflows without the need for additional configuration or setup.
+
+# AI Model Development and Chatbot Integration
+
+SLMat supports AI surrogate model development with packages such as Scikit-learn and XGBoost [@chen2016xgboost]. By incorporating both commercial and open-access AI-guided coding tools such as ChatGPT [@liu2023summary] and HuggingFace [@wolf2019huggingface], SLMat helps researchers write code more efficiently and with greater accuracy, even if they are not experts in programming. These AI-driven features provide real-time suggestions and code completions based on the context of the user's work, significantly reducing the time and effort required to develop complex models.
+
+SLMat also offers the unique capability of chatbot integration, providing researchers with a conversational interface to assist with various tasks. This integration allows users to interact with the platform using natural language, making it easier to navigate the toolkit's features, retrieve information, and even run simulations. The chatbot can be used to automate repetitive tasks, answer common questions, and guide users through the process of setting up and executing computational workflows, further streamlining the research process.
+
+# Security and Cost Efficiency
+
+In the current landscape of computational research, security and cost efficiency are critical considerations [@shafiei2022serverless]. SLMat addresses these concerns by offering a serverless architecture that enhances security. Since computations can be performed locally within the browser, sensitive data remains on the user's device, reducing the risk of exposure associated with cloud-based platforms. This security advantage makes SLMat particularly suitable for research areas where data confidentiality is paramount, such as in biomedical materials science.
+
+Moreover, the simplified backend of SLMat reduces the overhead associated with server management, leading to lower operational costs. By eliminating the need for dedicated servers and minimizing the complexity of the computational environment, SLMat provides a cost-effective solution for researchers, allowing them to focus on their scientific inquiries rather than the logistics of resource management.
+
+# Improved Production Time and Reproducibility
+
+The streamlined workflow offered by SLMat contributes to improved production time, enabling researchers to move from concept to execution more quickly. The platform's intuitive interface, combined with its AI-guided coding and chatbot features, reduces the time required to set up and run simulations, allowing for faster iteration and experimentation.
+
+Furthermore, SLMat promotes reproducible research [@peng2011reproducible; @choudhary2024jarvis] by providing a consistent and standardized environment for computational materials design. The ability to share workflows and results within the platform ensures that other researchers can replicate studies and build upon existing work, fostering collaboration and accelerating the pace of discovery in materials science.
+
+In the future, SLMat's capabilities can be further enhanced by integrating it with in-house computing clusters or cloud providers [@wankhede2020comparative], offering a hybrid approach that combines the flexibility of serverless architecture with the power of dedicated computational resources. This integration would allow researchers to seamlessly scale their workloads, leveraging local clusters for high-performance tasks while utilizing cloud resources for additional scalability and storage as needed.
 
 # Figures
 
@@ -48,9 +70,7 @@ This schematic highlights SLMat's key features: serverless architecture with in-
 
 ![SLMat schematic](./slmat.png)
 
-# Future Work
 
-In the future, SLMat's capabilities can be further enhanced by integrating it with in-house computing clusters or cloud providers, offering a hybrid approach that combines the flexibility of serverless architecture with the power of dedicated computational resources.
 
 
 
