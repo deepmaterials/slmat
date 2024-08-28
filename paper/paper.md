@@ -46,13 +46,13 @@ The rapid evolution of computational materials science is marked by significant 
 
 This schematic highlights SLMat's key features: serverless architecture with in-browser computation, simplified backend, lower costs, and enhanced security. It integrates multiscale materials design tools, connects to major materials databases, supports AI model development with persistent setups, and includes chatbot integration for an intuitive user experience.
 
-
+![SLMat schematic](./slmat.png)
 
 # Future Work
 
 In the future, SLMat's capabilities can be further enhanced by integrating it with in-house computing clusters or cloud providers, offering a hybrid approach that combines the flexibility of serverless architecture with the power of dedicated computational resources.
 
-![SLMat schematic](https://github.com/deepmaterials/slmat/edit/main/paper/slmat.png)
+
 
 # References
 
