@@ -67,9 +67,9 @@ Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
  - Extended Support: Include priority customer support, dedicated onboarding sessions, and exclusive tutorials.
 
 
-<div style="text-align: center;">
-    <img src="paper/slmat.gif" alt="SLMat gif" style="height: auto; width:500px;"/>
-</div>
+<p align="center">
+    <img src="paper/slmat.gif" alt="SLMat gif" style="height: auto; width:700px;"/>
+</p>
 
 
 
