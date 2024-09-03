@@ -18,7 +18,7 @@ SLMat is a serverless, browser-based toolkit that revolutionizes computational m
 <a name="contribute"></a>
 ## Contribute
 
-If you like or support the DeepMaterial/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
+If you like or support the DeepMaterials/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
 
 
 <a name="example"></a>
