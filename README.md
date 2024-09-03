@@ -15,6 +15,7 @@ SLMat is a serverless, browser-based toolkit that revolutionizes computational m
 ![SLMat schematic](paper/slmat.png)
 
 
+
 <a name="contribute"></a>
 ## Contribute
 
@@ -64,3 +65,11 @@ Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
  - Additional Storage: Provide additional cloud storage for datasets and models.
 
  - Extended Support: Include priority customer support, dedicated onboarding sessions, and exclusive tutorials.
+
+
+<div style="text-align: center;">
+    <img src="paper/slmat.gif" alt="SLMat gif" style="height: auto; width:500px;"/>
+</div>
+
+
+
