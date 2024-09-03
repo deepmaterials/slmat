@@ -7,7 +7,7 @@ def load_requirements(filename='requirements.txt'):
 
 setup(
     name='slmat',
-    version='2024.8.1',
+    version='2024.8.31',
     author='Kamal Choudhary',
     author_email='writetokamal.1989@gmail.com',
     description='ServerLess Materials Design',
