@@ -1,6 +1,6 @@
 # SLMat: ServerLess Materials Design Toolkit
 
-# Table of Contents
+## Table of Contents
 * [Introduction](#intro)
 * [Contribute $1/month](#contribute)
 * [Examples](#example)
