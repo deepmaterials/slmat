@@ -2,10 +2,10 @@
 
 # Table of Contents
 * [Introduction](#intro)
-* [SLMat Pro](#SLMatPro)
+* [Contribute $1/month](#contribute)
 * [Examples](#example)
 * [Notes](#notes)
-
+* [SLMat Pro](#SLMatPro)
 
 <a name="intro"></a>
 ## Introduction
@@ -14,22 +14,11 @@ SLMat is a serverless, browser-based toolkit that revolutionizes computational m
 
 ![SLMat schematic](paper/slmat.png)
 
-<a name="SLMatPro"></a>
-## Try SLMat Pro
 
-Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
+<a name="contribute"></a>
+## Contribute
 
- - Pro Features: Introduce advanced features for paid users, such as:
-
- - Advanced AI Tools: Access to more sophisticated AI-guided coding, model training, and premium algorithms.
-
- - Custom Integrations: Allow paid users to integrate SLMat with their private databases, in-house computing clusters, or custom APIs.
-
- - Faster Computation: Offer higher priority for computational resources, reducing wait times for simulations. 
-
- - Additional Storage: Provide additional cloud storage for datasets and models.
-
- - Extended Support: Include priority customer support, dedicated onboarding sessions, and exclusive tutorials.
+If you like or support the DeepMaterial/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
 
 
 <a name="example"></a>
@@ -59,4 +48,19 @@ Examples
 4.  Terminal access is under development.
 5.  More detailed documentation development is still work in progress, feedback/suggestions are welcome using [GitHub issues](https://github.com/deepmaterials/slmat/issues/new)
 
+<a name="SLMatPro"></a>
+## Try SLMat Pro
 
+Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
+
+ - Pro Features: Introduce advanced features for paid users, such as:
+
+ - Advanced AI Tools: Access to more sophisticated AI-guided coding, model training, and premium algorithms.
+
+ - Custom Integrations: Allow paid users to integrate SLMat with their private databases, in-house computing clusters, or custom APIs.
+
+ - Faster Computation: Offer higher priority for computational resources, reducing wait times for simulations. 
+
+ - Additional Storage: Provide additional cloud storage for datasets and models.
+
+ - Extended Support: Include priority customer support, dedicated onboarding sessions, and exclusive tutorials.
