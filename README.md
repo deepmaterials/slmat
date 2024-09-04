@@ -2,9 +2,9 @@
 
 ## Table of Contents
 * [Introduction](#intro)
-* [Contribute $1/month](#contribute)
 * [Examples](#example)
 * [Notes](#notes)
+* [Contribute $1/month](#contribute)
 * [SLMat Pro](#SLMatPro)
 
 <a name="intro"></a>
@@ -16,10 +16,7 @@ SLMat is a serverless, browser-based toolkit that revolutionizes computational m
 
 
 
-<a name="contribute"></a>
-## Contribute
 
-If you like or support the DeepMaterials/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
 
 
 <a name="example"></a>
@@ -32,8 +29,9 @@ Examples
 | [Visualizing atoms](https://github.com/deepmaterials/slmat/blob/main/content/Visualization.ipynb)                                                       | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/Visualization.ipynb)                                 | Visualizing atomic structure of face-centered cubic Aluminum.                                                                                                                                                                                                                                                                       |
 | [ASE Scaling Test](https://github.com/deepmaterials/slmat/blob/main/content/ASEScalingTest.ipynb)                                                       | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/ASEScalingTest.ipynb)                                 | Examples for analyzing number of atoms vs time taken to simulate copper atoms using ASE and EMT.                                                                                                                                                                                                                                                                       |
 | [ASE Ni MD](https://github.com/deepmaterials/slmat/blob/main/content/ASE_Ni_MD.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/ASE_Ni_MD.ipynb)                            | Examples of running molecular dynamics calculations for Nickel.                                                                                                                                                                                                                                                                                                                                 |
-| [Database_analysis](https://github.com/deepmaterials/slmat/blob/main/content/Database_analysis.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/Database_analysis.ipynb)                            | Examples of loading and analyzing databases such as Materials Project, JARVIS-DFT.                                                                                                                                                                                                                                                                                                                                 |
+| [DFT Database analysis](https://github.com/deepmaterials/slmat/blob/main/content/Database_analysis.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/Database_analysis.ipynb)                            | Examples of loading and analyzing density functional theory databases such as Materials Project, JARVIS-DFT.                                                                                                                                                                                                                                                                                                                                 |
 | [FiPy dendritic solidification](https://github.com/deepmaterials/slmat/blob/main/content/FiPy.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/FiPy.ipynb)                            | Examples of solving a dendritic solidification problem with FiPy.                                                                                                                                                                                                                                                                                                                                 |
+| [Scikit-FEM Poisson problem](https://github.com/deepmaterials/slmat/blob/main/content/scikit-fem.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/scikit-fem.ipynb)                            | Examples to solve the Poisson problem.                                                                                                                                                                                                                                                                                                                                 |
 | [ML Sklearn Steel Fatigue](https://github.com/deepmaterials/slmat/blob/main/content/ML_Sklearn.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/ML_Sklearn.ipynb)                            | Examples of training machine learning model for steel fatigue using scikit-learn.                                                                                                                                                                                                                                                                                                                                 |
 
 
@@ -48,6 +46,13 @@ Examples
 3.  Any publicly available/hosted notebook can be launched with SLMat using `fromURL` function: [`https://deepmaterials.github.io/slmat/lab?fromURL=`](https://deepmaterials.github.io/slmat/lab?fromURL=), e.g., [`https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb`](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb)
 4.  Terminal access is under development.
 5.  More detailed documentation development is still work in progress, feedback/suggestions are welcome using [GitHub issues](https://github.com/deepmaterials/slmat/issues/new)
+
+
+<a name="contribute"></a>
+## Contribute
+
+If you like or support the DeepMaterials/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
+
 
 <a name="SLMatPro"></a>
 ## Try SLMat Pro
