@@ -2,9 +2,9 @@
 
 ## Table of Contents
 * [Introduction](#intro)
-* [Contribute $1/month](#contribute)
 * [Examples](#example)
 * [Notes](#notes)
+* [Contribute $1/month](#contribute)
 * [SLMat Pro](#SLMatPro)
 
 <a name="intro"></a>
@@ -16,10 +16,7 @@ SLMat is a serverless, browser-based toolkit that revolutionizes computational m
 
 
 
-<a name="contribute"></a>
-## Contribute
 
-If you like or support the DeepMaterials/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
 
 
 <a name="example"></a>
@@ -49,6 +46,13 @@ Examples
 3.  Any publicly available/hosted notebook can be launched with SLMat using `fromURL` function: [`https://deepmaterials.github.io/slmat/lab?fromURL=`](https://deepmaterials.github.io/slmat/lab?fromURL=), e.g., [`https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb`](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/knc6/jarvis-tools-notebooks/master/jarvis-tools-notebooks/Analyzing_data_in_the_JARVIS_DFT_dataset.ipynb)
 4.  Terminal access is under development.
 5.  More detailed documentation development is still work in progress, feedback/suggestions are welcome using [GitHub issues](https://github.com/deepmaterials/slmat/issues/new)
+
+
+<a name="contribute"></a>
+## Contribute
+
+If you like or support the DeepMaterials/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
+
 
 <a name="SLMatPro"></a>
 ## Try SLMat Pro
