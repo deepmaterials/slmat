@@ -6,7 +6,8 @@
 * [Notes](#notes)
 * [Contribute $1/month](#contribute)
 * [SLMat Pro](#SLMatPro)
-
+* [Reference](#reference)
+  
 <a name="intro"></a>
 ## Introduction
 
@@ -72,6 +73,9 @@ Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
 
  - Extended Support: Include priority customer support, dedicated onboarding sessions, and exclusive tutorials.
 
+<a name="reference"></a>
+## Reference
+[SLMat: A Comprehensive Serverless Toolkit for Advanced Materials Design](https://doi.org/10.26434/chemrxiv-2024-fqq27)
 
 <p align="center">
     <img src="paper/slmat.gif" alt="SLMat gif" style="height: auto; width:700px;"/>
