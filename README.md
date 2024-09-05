@@ -53,7 +53,16 @@ Examples
 <a name="contribute"></a>
 ## Contribute
 
-If you like or support the DeepMaterials/SLMat project, please consider contributing $1 per month using the [Stripe link](https://buy.stripe.com/cN28zefKc6Nt2v65kk).
+If you like or support the DeepMaterials/SLMat project, please consider supporting our work:
+
+| Amount | Payment Link |
+|--------|--------------|
+| $1     | [Link](https://buy.stripe.com/cN28zefKc6Nt2v65kk) |
+| $10    | [Link](https://buy.stripe.com/4gw3eUdC40p5glW001) |
+| $100   | [Link](https://buy.stripe.com/00gbLq8hK5JpfhS4gi) |
+
+
+
 
 
 <a name="SLMatPro"></a>
