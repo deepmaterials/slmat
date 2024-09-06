@@ -7,6 +7,7 @@
 * [Contribute $1/month](#contribute)
 * [SLMat Pro](#SLMatPro)
 * [Reference](#reference)
+* [Contact](#contact)
   
 <a name="intro"></a>
 ## Introduction
@@ -86,6 +87,12 @@ Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
 ## Reference
 1. [SLMat: A Comprehensive Serverless Toolkit for Advanced Materials Design](https://doi.org/10.26434/chemrxiv-2024-fqq27)
 2. Checkout DeepMaterials LLC website: [https://www.deepmaterials.org/](https://www.deepmaterials.org/)
+
+
+<a name="contact"></a>
+## Contact
+
+Email: [deepmaterialsllc@gmail.com](deepmaterialsllc@gmail.com)
 
 <p align="center">
     <img src="paper/slmat.gif" alt="SLMat gif" style="height: auto; width:700px;"/>
