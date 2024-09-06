@@ -84,7 +84,8 @@ Fill up this [Google form](https://forms.gle/FjrogZFJgTKKY8Y19)
 
 <a name="reference"></a>
 ## Reference
-[SLMat: A Comprehensive Serverless Toolkit for Advanced Materials Design](https://doi.org/10.26434/chemrxiv-2024-fqq27)
+1. [SLMat: A Comprehensive Serverless Toolkit for Advanced Materials Design](https://doi.org/10.26434/chemrxiv-2024-fqq27)
+2. Checkout DeepMaterials LLC website: [https://www.deepmaterials.org/](https://www.deepmaterials.org/)
 
 <p align="center">
     <img src="paper/slmat.gif" alt="SLMat gif" style="height: auto; width:700px;"/>
