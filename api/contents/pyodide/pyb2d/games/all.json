@@ -1,0 +1,71 @@
+{
+  "content": [
+    {
+      "content": null,
+      "created": "2024-09-06T15:15:47.905000Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2024-09-06T15:14:31.752006Z",
+      "mimetype": null,
+      "name": "billiard.ipynb",
+      "path": "pyodide/pyb2d/games/billiard.ipynb",
+      "size": 10561,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2024-09-06T15:15:47.905000Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2024-09-06T15:14:31.752006Z",
+      "mimetype": null,
+      "name": "angry_shapes.ipynb",
+      "path": "pyodide/pyb2d/games/angry_shapes.ipynb",
+      "size": 17128,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2024-09-06T15:15:47.905000Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2024-09-06T15:14:31.752006Z",
+      "mimetype": null,
+      "name": "rocket.ipynb",
+      "path": "pyodide/pyb2d/games/rocket.ipynb",
+      "size": 10754,
+      "type": "notebook",
+      "writable": true
+    },
+    {
+      "content": null,
+      "created": "2024-09-06T15:15:47.905000Z",
+      "format": null,
+      "hash": null,
+      "hash_algorithm": null,
+      "last_modified": "2024-09-06T15:14:31.752006Z",
+      "mimetype": null,
+      "name": "goo.ipynb",
+      "path": "pyodide/pyb2d/games/goo.ipynb",
+      "size": 23133,
+      "type": "notebook",
+      "writable": true
+    }
+  ],
+  "created": "2024-09-06T15:15:47.905000Z",
+  "format": "json",
+  "hash": null,
+  "hash_algorithm": null,
+  "last_modified": "2024-09-06T15:15:47.905000Z",
+  "mimetype": null,
+  "name": "games",
+  "path": "pyodide/pyb2d/games",
+  "size": null,
+  "type": "directory",
+  "writable": true
+}
