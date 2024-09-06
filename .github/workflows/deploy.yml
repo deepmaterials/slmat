@@ -24,7 +24,8 @@ jobs:
       - name: Build the JupyterLite site
         run: |
           # jupyter lite build --files content
-          jupyter lite build --contents content --output-dir dist
+          # jupyter lite build --contents content --output-dir dist
+          jupyter lite build --contents content --output-dir content
       - name: Upload (dist)
         uses: actions/upload-artifact@v2
         with:
