@@ -1,15 +1,14 @@
 {
   "jupyter-lite-schema-version": 0,
   "jupyter-config-data": {
-    "terminalsAvailable": true
-  },
-   "jupyter-config-data": {
+    "terminalsAvailable": true,
     "disabledExtensions": [],
     "enabledExtensions": [
       "@jupyterlab/github-extension"
     ]
   },
   "federated_extensions": [
-    "@jupyterlab/github-extension"
-  ],
+    "@jupyterlab/github-extension",
+    "@jupyterlite/xterm-addon-lite"
+  ]
 }
