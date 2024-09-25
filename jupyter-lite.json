@@ -413,8 +413,7 @@
           "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=6e57b48fb2d299264f057f2f32f94af3ec2dc8436134efac11d0e8fef64adec1"
         ]
       }
-    },
-    "terminalsAvailable": true
+    }
   },
   "jupyter-lite-schema-version": 0
 }
