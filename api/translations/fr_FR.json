@@ -211,6 +211,12 @@
         "plural_forms": "nplurals=2; plural=(n > 1);",
         "version": "jupyterlab"
       },
+      "%1 %2 %3": [
+        "%1 %2 %3"
+      ],
+      "%1 %2 / %3 %4": [
+        "%1 %2 / %3 %4"
+      ],
       "%2%% used on %1 CPU": [
         "%2%% utilis\u00e9 sur %1 processeur",
         "%2%% utilis\u00e9 sur %1 processeurs"
@@ -335,11 +341,17 @@
       "settings\u0004CPU Settings": [
         "Param\u00e8tres du CPU"
       ],
+      "settings\u0004Disk Settings": [
+        "Param\u00e8tres Disque"
+      ],
       "settings\u0004Enable resource usage indicators": [
         "Activer les indicateurs d'utilisation des ressources"
       ],
       "settings\u0004Label for the cpu indicator": [
         "\u00c9tiquette pour l'usage du processeur"
+      ],
+      "settings\u0004Label for the disk indicator": [
+        "\u00c9tiquette pour l'usage du disque"
       ],
       "settings\u0004Label for the memory indicator": [
         "\u00c9tiquette pour l'usage de la m\u00e9moire"
@@ -355,6 +367,9 @@
       ],
       "settings\u0004Settings for the CPU indicator": [
         "Param\u00e8tres pour l'indicateur du processeur"
+      ],
+      "settings\u0004Settings for the Disk indicator": [
+        "Param\u00e8tres pour l'usage du disque"
       ],
       "settings\u0004Settings for the memory indicator": [
         "Param\u00e8tres pour l'indicateur de la m\u00e9moire"
@@ -4680,6 +4695,9 @@
       "settings\u0004Add accessibility elements for use with screen readers.": [
         "Ajouter des \u00e9l\u00e9ments d'accessibilit\u00e9 \u00e0 utiliser avec les lecteurs d'\u00e9cran."
       ],
+      "settings\u0004Allow named properties": [
+        "Autoriser les propri\u00e9t\u00e9s nomm\u00e9es"
+      ],
       "settings\u0004Allowed URL Scheme": [
         "Sch\u00e9ma d'URL autoris\u00e9"
       ],
@@ -5501,6 +5519,9 @@
       ],
       "settings\u0004Whether the user agrees the access to external web services and understands extensions may introduce security risks or contain malicious code that runs on his machine.": [
         "L'utilisateur accepte-t-il l'acc\u00e8s \u00e0 des services web externes et comprend-il que les extensions peuvent introduire des risques de s\u00e9curit\u00e9 ou contenir du code malveillant qui s'ex\u00e9cute sur sa machine?"
+      ],
+      "settings\u0004Whether to allow untrusted elements to include `name` and `id` attributes. These attributes are stripped by default to prevent DOM clobbering attacks.": [
+        "Autoriser les balises HTML non-fiables \u00e0 inclure les attributs `name` et `id`. Ces attributs sont supprim\u00e9s par d\u00e9faut pour emp\u00eacher les attaques de clobbering DOM."
       ],
       "settings\u0004Whether to apply fuzzy algorithm while filtering on file names": [
         "Appliquer ou non un algorithme flou lors du filtrage sur les noms de fichiers"
@@ -8163,7 +8184,7 @@
         "\u00c9diteur JupyterLab de feuille de calcul"
       ],
       "schema\u0004JupyterLab spreadsheet editor settings.": [
-        "Param\u00e8tres de l'\u00e9diteur JupyterLab de feuilles de calcul."
+        "Param\u00e8tres de l'\u00e9diteur de feuilles de calcul JupyterLab."
       ]
     },
     "jupyterlab_tour": {

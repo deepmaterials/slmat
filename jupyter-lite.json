@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.ff6c727fc3efc4b10216.js",
+        "load": "static/remoteEntry.a182d8e09907a401421c.js",
         "name": "@jupyter-ai/core",
         "style": "./style"
       },
@@ -43,6 +43,13 @@
       },
       {
         "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.3bfd9366a4d281640860.js",
+        "name": "@jupyterlab/github",
+        "style": "./style"
+      },
+      {
+        "extension": "./extension",
         "liteExtension": true,
         "load": "static/remoteEntry.6014628263d9ee9ca44a.js",
         "name": "@jupyterlite/javascript-kernel-extension"
@@ -63,7 +70,7 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.c2ac13e2a67fbf21986b.js",
+        "load": "static/remoteEntry.b94ca8d85e6ace5c2645.js",
         "name": "@jupyterlite/terminal",
         "style": "./style"
       },
@@ -119,7 +126,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.41e12212782f05d7d17b.js",
+        "load": "static/remoteEntry.c6c768d682b3638efd6b.js",
         "mimeExtension": "./mimeExtension",
         "name": "jupyterlab-plotly"
       },
