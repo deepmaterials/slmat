@@ -43,6 +43,13 @@
       },
       {
         "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.3bfd9366a4d281640860.js",
+        "name": "@jupyterlab/github",
+        "style": "./style"
+      },
+      {
+        "extension": "./extension",
         "liteExtension": true,
         "load": "static/remoteEntry.6014628263d9ee9ca44a.js",
         "name": "@jupyterlite/javascript-kernel-extension"
