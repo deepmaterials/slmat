@@ -45,7 +45,7 @@ plotly>=5,<6
 bqplot
 jupyterlab-open-url-parameter
 jupyterlite-terminal
-# jupyterlab-github
+jupyterlab-github
 # optional
 ase
 jarvis-tools
