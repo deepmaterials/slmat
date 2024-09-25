@@ -1,18 +1,10 @@
 {
-  "federated_extensions": [
-    "@jupyterlab/github-extension",
-    "@jupyterlite/xterm-addon-lite"
-  ],
   "jupyter-config-data": {
     "appName": "JupyterLite",
     "appUrl": "./lab",
     "appVersion": "0.4.0",
     "baseUrl": "./",
     "defaultKernelName": "python",
-    "disabledExtensions": [],
-    "enabledExtensions": [
-      "@jupyterlab/github-extension"
-    ],
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
       {
