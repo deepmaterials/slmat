@@ -13,9 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: "3.10"
       - name: Install the dependencies
@@ -27,7 +27,7 @@ jobs:
           jupyter lite build --contents content --output-dir dist
 
       - name: Upload (dist)
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: jupyterlite-demo dist ${{ github.run_number }}
           # path: ./_output
@@ -40,7 +40,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: jupyterlite-demo dist ${{ github.run_number }}
           path: ./dist
