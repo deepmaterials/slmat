@@ -1,6 +1,6 @@
 {
   "name": "@jupyter-ai/core",
-  "version": "2.23.0",
+  "version": "2.24.0",
   "description": "A generative AI extension for JupyterLab",
   "keywords": [
     "jupyter",
@@ -130,7 +130,7 @@
     "outputDir": "jupyter_ai/labextension",
     "schemaDir": "schema",
     "_build": {
-      "load": "static/remoteEntry.a182d8e09907a401421c.js",
+      "load": "static/remoteEntry.da65d404cca8bbfaf4c3.js",
       "extension": "./extension",
       "style": "./style"
     }
