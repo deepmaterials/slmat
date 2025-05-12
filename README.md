@@ -4,7 +4,7 @@
 * [Introduction](#intro)
 * [Examples](#example)
 * [Notes](#notes)
-* [Contribute $1/month](#contribute)
+* [Contribute](#contribute)
 * [SLMat Pro](#SLMatPro)
 * [Reference](#reference)
 * [Contact](#contact)
@@ -38,6 +38,7 @@ Examples
 | [FiPy dendritic solidification](https://github.com/deepmaterials/slmat/blob/main/content/FiPy.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/FiPy.ipynb)                            | Examples of solving a dendritic solidification problem with FiPy.                                                                                                                                                                                                                                                                                                                                 |
 | [Scikit-FEM Poisson problem](https://github.com/deepmaterials/slmat/blob/main/content/scikit-fem.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/scikit-fem.ipynb)                            | Examples to solve the Poisson problem.                                                                                                                                                                                                                                                                                                                                 |
 | [ML Sklearn Steel Fatigue](https://github.com/deepmaterials/slmat/blob/main/content/ML_Sklearn.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/ML_Sklearn.ipynb)                            | Examples of training machine learning model for steel fatigue using scikit-learn.                                                                                                                                                                                                                                                                                                                                 |
+| [OpenAI ChatBot Integration](https://github.com/deepmaterials/slmat/blob/develop/content/OpenAI_API.ipynb)                                                  | [![Open in SLMat]](https://deepmaterials.github.io/slmat/lab?fromURL=https://raw.githubusercontent.com/deepmaterials/slmat/main/content/OpenAI_API.ipynb)                            | Examples to use OpenAI API.                                                                                                                                                                                                                                                                                                                                 |
 
 
 [Open in SLMat]: https://img.shields.io/badge/Open-SLMat-blue
