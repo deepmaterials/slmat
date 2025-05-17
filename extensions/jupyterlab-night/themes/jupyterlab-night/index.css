@@ -1,7 +1,7 @@
-/*-----------------------------------------------------------------------------
+/* -----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
-|----------------------------------------------------------------------------*/
+|---------------------------------------------------------------------------- */
 
 /*
 The following CSS variables define the main, public API for styling JupyterLab.
@@ -24,11 +24,6 @@ Material Design when selecting colors. We are not, however, following
 all of MD as it is not optimized for dense, information rich UIs.
 */
 
-@font-face {
-  font-family: 'JetBrains Mono';
-  src: url(cd5c21dfecad1bf39296a3649056f8c59115c383ade9c3c43ca344ca11bbd809.ttf) format('truetype');
-}
-
 :root {
   /* Elevation
    *
@@ -40,58 +35,58 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-night-green: #238635;
   --jp-night-blue: #59a6ff;
-  --jp-night-orange: #F78166;
+  --jp-night-orange: #f78166;
   --jp-night-red: #e94d46;
   --jp-night-purple: #a371f7;
   --jp-night-grey: #8b949e;
 
-   --jp-shadow-base-lightness: 32;
-   --jp-shadow-umbra-color: rgba(
-     var(--jp-shadow-base-lightness),
-     var(--jp-shadow-base-lightness),
-     var(--jp-shadow-base-lightness),
-     0.2
-   );
-   --jp-shadow-penumbra-color: rgba(
-     var(--jp-shadow-base-lightness),
-     var(--jp-shadow-base-lightness),
-     var(--jp-shadow-base-lightness),
-     0.14
-   );
-   --jp-shadow-ambient-color: rgba(
-     var(--jp-shadow-base-lightness),
-     var(--jp-shadow-base-lightness),
-     var(--jp-shadow-base-lightness),
-     0.12
-   );
-   --jp-elevation-z0: none;
-   --jp-elevation-z1: 0 2px 1px -1px var(--jp-shadow-umbra-color),
-     0 1px 1px 0 var(--jp-shadow-penumbra-color),
-     0 1px 3px 0 var(--jp-shadow-ambient-color);
-   --jp-elevation-z2: 0 3px 1px -2px var(--jp-shadow-umbra-color),
-     0 2px 2px 0 var(--jp-shadow-penumbra-color),
-     0 1px 5px 0 var(--jp-shadow-ambient-color);
-   --jp-elevation-z4: 0 2px 4px -1px var(--jp-shadow-umbra-color),
-     0 4px 5px 0 var(--jp-shadow-penumbra-color),
-     0 1px 10px 0 var(--jp-shadow-ambient-color);
-   --jp-elevation-z6: 0 3px 5px -1px var(--jp-shadow-umbra-color),
-     0 6px 10px 0 var(--jp-shadow-penumbra-color),
-     0 1px 18px 0 var(--jp-shadow-ambient-color);
-   --jp-elevation-z8: 0 5px 5px -3px var(--jp-shadow-umbra-color),
-     0 8px 10px 1px var(--jp-shadow-penumbra-color),
-     0 3px 14px 2px var(--jp-shadow-ambient-color);
-   --jp-elevation-z12: 0 7px 8px -4px var(--jp-shadow-umbra-color),
-     0 12px 17px 2px var(--jp-shadow-penumbra-color),
-     0 5px 22px 4px var(--jp-shadow-ambient-color);
-   --jp-elevation-z16: 0 8px 10px -5px var(--jp-shadow-umbra-color),
-     0 16px 24px 2px var(--jp-shadow-penumbra-color),
-     0 6px 30px 5px var(--jp-shadow-ambient-color);
-   --jp-elevation-z20: 0 10px 13px -6px var(--jp-shadow-umbra-color),
-     0 20px 31px 3px var(--jp-shadow-penumbra-color),
-     0 8px 38px 7px var(--jp-shadow-ambient-color);
-   --jp-elevation-z24: 0 11px 15px -7px var(--jp-shadow-umbra-color),
-     0 24px 38px 3px var(--jp-shadow-penumbra-color),
-     0 9px 46px 8px var(--jp-shadow-ambient-color);
+  --jp-shadow-base-lightness: 32;
+  --jp-shadow-umbra-color: rgba(
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.2
+  );
+  --jp-shadow-penumbra-color: rgba(
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.14
+  );
+  --jp-shadow-ambient-color: rgba(
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    var(--jp-shadow-base-lightness),
+    0.12
+  );
+  --jp-elevation-z0: none;
+  --jp-elevation-z1: 0 2px 1px -1px var(--jp-shadow-umbra-color),
+    0 1px 1px 0 var(--jp-shadow-penumbra-color),
+    0 1px 3px 0 var(--jp-shadow-ambient-color);
+  --jp-elevation-z2: 0 3px 1px -2px var(--jp-shadow-umbra-color),
+    0 2px 2px 0 var(--jp-shadow-penumbra-color),
+    0 1px 5px 0 var(--jp-shadow-ambient-color);
+  --jp-elevation-z4: 0 2px 4px -1px var(--jp-shadow-umbra-color),
+    0 4px 5px 0 var(--jp-shadow-penumbra-color),
+    0 1px 10px 0 var(--jp-shadow-ambient-color);
+  --jp-elevation-z6: 0 3px 5px -1px var(--jp-shadow-umbra-color),
+    0 6px 10px 0 var(--jp-shadow-penumbra-color),
+    0 1px 18px 0 var(--jp-shadow-ambient-color);
+  --jp-elevation-z8: 0 5px 5px -3px var(--jp-shadow-umbra-color),
+    0 8px 10px 1px var(--jp-shadow-penumbra-color),
+    0 3px 14px 2px var(--jp-shadow-ambient-color);
+  --jp-elevation-z12: 0 7px 8px -4px var(--jp-shadow-umbra-color),
+    0 12px 17px 2px var(--jp-shadow-penumbra-color),
+    0 5px 22px 4px var(--jp-shadow-ambient-color);
+  --jp-elevation-z16: 0 8px 10px -5px var(--jp-shadow-umbra-color),
+    0 16px 24px 2px var(--jp-shadow-penumbra-color),
+    0 6px 30px 5px var(--jp-shadow-ambient-color);
+  --jp-elevation-z20: 0 10px 13px -6px var(--jp-shadow-umbra-color),
+    0 20px 31px 3px var(--jp-shadow-penumbra-color),
+    0 8px 38px 7px var(--jp-shadow-ambient-color);
+  --jp-elevation-z24: 0 11px 15px -7px var(--jp-shadow-umbra-color),
+    0 24px 38px 3px var(--jp-shadow-penumbra-color),
+    0 9px 46px 8px var(--jp-shadow-ambient-color);
 
   /* Borders
    *
@@ -120,8 +115,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-ui-font-size1: 13px; /* Base font size */
   --jp-ui-font-size2: 1.2em;
   --jp-ui-font-size3: 1.44em;
-
-  --jp-ui-font-family: 'JetBrains Mono';
+  --jp-ui-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica,
+    arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   /*
    * Use these font colors against the corresponding main layout colors.
@@ -183,7 +178,9 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-font-color3: rgba(255, 255, 255, 0.5);
   --jp-content-link-color: var(--jp-night-blue);
 
-  --jp-content-font-family: 'JetBrains Mono';
+  --jp-content-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI',
+    helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
 
   /*
    * Code Fonts
@@ -194,7 +191,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-code-font-size: 13px;
   --jp-code-line-height: 1.3077; /* 17px for 13px base */
   --jp-code-padding: 0.385em; /* 5px for 13px base */
-  --jp-code-font-family-default: 'JetBrains Mono';
+  --jp-code-font-family-default: menlo, consolas, 'DejaVu Sans Mono', monospace;
   --jp-code-font-family: var(--jp-code-font-family-default);
 
   /* This gives a magnification of about 125% in presentation mode over normal. */
@@ -278,16 +275,17 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
 
   --jp-cell-prompt-width: 64px;
-  --jp-cell-prompt-font-family: 'JetBrains Mono';
+  --jp-cell-prompt-font-family: 'Source Code Pro', monospace;
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.8;
   --jp-cell-prompt-not-active-font-color: white;
+
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
   --jp-cell-inprompt-font-color: var(--jp-night-green);
 
-   /* A custom blend of MD grey and orange 600
+  /* A custom blend of MD grey and orange 600
     * https://meyerweb.com/eric/tools/color-blend/#546E7A:F4511E:5:hex */
   --jp-cell-outprompt-font-color: var(--jp-night-orange);
 
@@ -420,6 +418,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Sidebar-related styles */
 
   --jp-sidebar-min-width: 180px;
+
+  /* Search colors */
+  --jp-search-toggle-off-opacity: 0.6;
+  --jp-search-toggle-hover-opacity: 0.8;
+  --jp-search-toggle-on-opacity: 1;
+  --jp-search-selected-match-background-color: var(--md-yellow-500);
+  --jp-search-selected-match-color: black;
+  --jp-search-unselected-match-background-color: var(--jp-night-blue);
+  --jp-search-unselected-match-color: var(--jp-ui-font-color0);
 }
 
 .jp-InputArea-editor {
@@ -430,7 +437,10 @@ all of MD as it is not optimized for dense, information rich UIs.
   border-radius: 6px;
 }
 
-.jp-FileBrowser-toolbar.jp-Toolbar .jp-Toolbar-item:first-child .jp-ToolbarButtonComponent .jp-icon3 {
+.jp-FileBrowser-toolbar.jp-Toolbar
+  .jp-Toolbar-item:first-child
+  .jp-ToolbarButtonComponent
+  .jp-icon3 {
   fill: white;
 }
 
@@ -440,20 +450,20 @@ all of MD as it is not optimized for dense, information rich UIs.
 
 .jp-LauncherCard {
   background: var(--jp-layout-color2);
-  transition: .2s cubic-bezier(0.3, 0, 0.5, 1);
-  transition-property: color,background-color,border-color;
+  transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  transition-property: color, background-color, border-color;
 }
 
 .jp-LauncherCard:hover {
   background: var(--jp-layout-color4);
-  transition-duration: .1s;
+  transition-duration: 0.1s;
   border-color: var(--jp-night-grey);
 }
 
 .jp-SideBar.lm-TabBar .lm-TabBar-tab.lm-mod-current {
   border-top-style: solid;
   border-top-color: var(--jp-night-green);
-  border-top-width: 3px;
+  border-top-width: 3px; /* stylelint-disable-line */
 }
 
 .CodeMirror-selected {
@@ -478,3 +488,4 @@ pre {
   font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
 }
+

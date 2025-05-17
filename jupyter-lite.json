@@ -10,21 +10,21 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.da65d404cca8bbfaf4c3.js",
+        "load": "static/remoteEntry.681c554aa01d39b7234b.js",
         "name": "@jupyter-ai/core",
         "style": "./style"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.04dfa589925e7e7c6a3d.js",
+        "load": "static/remoteEntry.8cdb5c12db85ac589ef4.js",
         "name": "@jupyter-notebook/lab-extension",
         "style": "./style"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.e4ff09401a2f575928c0.js",
+        "load": "static/remoteEntry.35b6c65bd99dab37b910.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },
       {
@@ -63,7 +63,7 @@
       {
         "extension": "./extension",
         "liteExtension": true,
-        "load": "static/remoteEntry.b94ca8d85e6ace5c2645.js",
+        "load": "static/remoteEntry.8daaa8361705786768db.js",
         "name": "@jupyterlite/terminal",
         "style": "./style"
       },
@@ -76,7 +76,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.a36d13f475360b3d8988.js",
+        "load": "static/remoteEntry.d4a268dd70153c5d1266.js",
         "name": "bqplot"
       },
       {
@@ -100,13 +100,13 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.a0518cb14ef99e994963.js",
+        "load": "static/remoteEntry.1cd74fa323152bfea195.js",
         "name": "jupyter-matplotlib"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.6a37df5d4590b29196a3.js",
+        "load": "static/remoteEntry.2105cdd7da221c68dcd3.js",
         "name": "jupyterlab-night"
       },
       {

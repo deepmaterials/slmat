@@ -1,6 +1,6 @@
 {
   "name": "jupyter-matplotlib",
-  "version": "0.11.4",
+  "version": "0.11.7",
   "description": "Matplotlib Jupyter Interactive Widget",
   "author": "Matplotlib Development team",
   "license": "BSD-3-Clause",
@@ -50,7 +50,7 @@
       }
     },
     "_build": {
-      "load": "static/remoteEntry.a0518cb14ef99e994963.js",
+      "load": "static/remoteEntry.1cd74fa323152bfea195.js",
       "extension": "./extension"
     }
   },

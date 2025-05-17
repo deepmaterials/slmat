@@ -1,0 +1,59 @@
+{
+  "packages": {
+    "cockle_fs": {
+      "modules": {
+        "fs": {
+          "commands": ""
+        }
+      },
+      "wasm": true,
+      "build_string": "h71f8667_5",
+      "platform": "emscripten-wasm32",
+      "version": "0.3.0",
+      "channel": "https://repo.prefix.dev/emscripten-forge-dev"
+    },
+    "coreutils": {
+      "modules": {
+        "coreutils": {
+          "commands": "basename,cat,chmod,cp,cut,date,dir,dircolors,dirname,echo,env,expr,head,id,join,ln,logname,ls,md5sum,mkdir,mv,nl,pwd,realpath,rm,rmdir,seq,sha1sum,sha224sum,sha256sum,sha384sum,sha512sum,sleep,sort,stat,stty,tail,tee,touch,tr,tty,uname,uniq,vdir,wc"
+        }
+      },
+      "wasm": true,
+      "build_string": "he2bab3c_6",
+      "platform": "emscripten-wasm32",
+      "version": "9.5",
+      "channel": "https://repo.prefix.dev/emscripten-forge-dev"
+    },
+    "grep": {
+      "wasm": true,
+      "build_string": "ha2cbc09_6",
+      "platform": "emscripten-wasm32",
+      "version": "3.11",
+      "channel": "https://repo.prefix.dev/emscripten-forge-dev",
+      "modules": {
+        "grep": {
+          "commands": "grep"
+        }
+      }
+    },
+    "sed": {
+      "wasm": true,
+      "build_string": "he2bab3c_0",
+      "platform": "emscripten-wasm32",
+      "version": "4.9",
+      "channel": "https://repo.prefix.dev/emscripten-forge-dev",
+      "modules": {
+        "sed": {
+          "commands": "sed"
+        }
+      }
+    }
+  },
+  "aliases": {
+    "dir": "dir --color=auto",
+    "grep": "grep --color=auto",
+    "ls": "ls --color=auto",
+    "ll": "ls -lF",
+    "vdir": "vdir --color=auto"
+  }
+}
