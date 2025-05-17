@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - develop
   pull_request:
     branches:
       - '*'
@@ -28,9 +27,9 @@ jobs:
           jupyter lite build --contents content --output-dir dist
 
       - name: Upload (dist)
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2  # Changed from v3 to v2
         with:
-          name: jupyterlite-demo dist ${{ github.run_number }}
+          name: jupyterlite-demo-dist-${{ github.run_number }}
           # path: ./_output
           path: ./dist
 
@@ -40,10 +39,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - uses: actions/download-artifact@v3
+        uses: actions/checkout@v2.3.1
+      - uses: actions/download-artifact@v2  # Changed from v3 to v2
         with:
-          name: jupyterlite-demo dist ${{ github.run_number }}
+          name: jupyterlite-demo-dist-${{ github.run_number }}
           path: ./dist
 
       - name: Deploy
