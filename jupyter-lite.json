@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.681c554aa01d39b7234b.js",
+        "load": "static/remoteEntry.db620b10e3b8925e7774.js",
         "name": "@jupyter-ai/core",
         "style": "./style"
       },
@@ -62,8 +62,8 @@
       },
       {
         "extension": "./extension",
-        "liteExtension": true,
-        "load": "static/remoteEntry.8daaa8361705786768db.js",
+        "liteExtension": false,
+        "load": "static/remoteEntry.dc76f4250c06409b7956.js",
         "name": "@jupyterlite/terminal",
         "style": "./style"
       },
@@ -76,37 +76,37 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.d4a268dd70153c5d1266.js",
+        "load": "static/remoteEntry.ac6ba46a96b6912c489d.js",
         "name": "bqplot"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.7b364776099b271c7e6e.js",
+        "load": "static/remoteEntry.fb45db9d3f32bd4bc57a.js",
         "name": "ipycanvas"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.4d5ef87d14f03accc582.js",
+        "load": "static/remoteEntry.929a2e1ca74d3a1af827.js",
         "name": "ipyevents"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.a83217134ba8dacb85fc.js",
+        "load": "static/remoteEntry.9aa97e6313eff609d36c.js",
         "name": "jupyter-leaflet"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.1cd74fa323152bfea195.js",
+        "load": "static/remoteEntry.95a2c52adea5b580b11d.js",
         "name": "jupyter-matplotlib"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.2105cdd7da221c68dcd3.js",
+        "load": "static/remoteEntry.18b3107a2356a7103aea.js",
         "name": "jupyterlab-night"
       },
       {

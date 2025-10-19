@@ -119,11 +119,20 @@
         "plural_forms": "nplurals=2; plural=(n > 1);",
         "version": "jupyterlab"
       },
+      "Actions": [
+        "Actions"
+      ],
       "Anyone with this link has full access to your notebook server, including all your files!": [
         "Toute personne ayant ce lien aura un acc\u00e8s complet \u00e0 votre serveur Jupyter, y compris \u00e0 tous vos fichiers!"
       ],
       "Cell not executed due to pending input": [
         "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e en raison d'une entr\u00e9e en attente"
+      ],
+      "Close": [
+        "Fermer"
+      ],
+      "Close the dialog": [
+        "Fermer la bo\u00eete de dialogue"
       ],
       "Collaboration": [
         "Collaboration"
@@ -140,11 +149,20 @@
       "Document session error": [
         "Erreur de session du document"
       ],
+      "Failed to update user data": [
+        "Impossible de mettre \u00e0 jour les donn\u00e9es de l'utilisateur"
+      ],
       "File Browser Section": [
         "Section du navigateur de fichiers"
       ],
       "Generate a Shared Link": [
         "Cr\u00e9er un lien de partage"
+      ],
+      "Group %1": [
+        "Groupe %1"
+      ],
+      "If your Hub administrator allows it, you can create another server dedicated to sharing a specific project.": [
+        "Si votre administrateur de Hub le permet, vous pouvez cr\u00e9er un autre serveur d\u00e9di\u00e9 au partage d'un projet sp\u00e9cifique."
       ],
       "Include token in URL": [
         "Inclure le jeton d'acc\u00e8s dans l'URL"
@@ -167,14 +185,26 @@
       "Please be careful who you share it with.": [
         "Soyez prudent lors du partage de ce lien."
       ],
+      "Revoke": [
+        "R\u00e9voquer"
+      ],
       "Security warning!": [
         "Avertissement de s\u00e9curit\u00e9!"
       ],
       "Server": [
         "Serveur"
       ],
+      "Share Jupyter Server %1": [
+        "Partager le serveur Jupyter %1"
+      ],
       "Share Jupyter Server Link": [
         "Partager le lien du serveur Jupyter"
+      ],
+      "Shared since": [
+        "Partag\u00e9 depuis"
+      ],
+      "Shared with": [
+        "Partag\u00e9 avec"
       ],
       "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again.": [
         "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e pour \u00e9viter de bloquer le noyau d'ex\u00e9cution car une autre entr\u00e9e est en attente. Soumettez une valeur et r\u00e9essayez."
@@ -188,8 +218,11 @@
       "To revoke access, go to File -> Hub Control Panel, and restart your server.": [
         "Pour r\u00e9voquer l'acc\u00e8s, allez dans Fichier -> Panneau de configuration Hub et red\u00e9marrez votre serveur."
       ],
-      "Two collaborative sessions are accessing the file %1 simultaneously.\n                \nOpening a document with multiple views simultaneously is not supported. Please close one view; otherwise, you might lose some of your progress.": [
-        "Deux sessions collaboratives acc\u00e8dent simultan\u00e9ment au fichier %1 .\n                \nOuvrir un document avec des vues multiples simultan\u00e9ment n'est pas pris en charge. Veuillez fermer une vue; sinon, vous risquez de perdre une partie de vos modifications."
+      "Type to search for a user or a group to share your server with...": [
+        "Tapez pour rechercher un utilisateur ou un groupe avec lequel partager votre serveur..."
+      ],
+      "User Details": [
+        "D\u00e9tails de l'utilisateur"
       ],
       "User info": [
         "Informations utilisateur"
@@ -199,6 +232,12 @@
       ],
       "Warning": [
         "Avertissement"
+      ],
+      "Warning: Anyone you share this server with will have access to all your files, not just the currently open file.": [
+        "Attention : Toute personne avec laquelle vous partagez ce serveur aura acc\u00e8s \u00e0 tous vos fichiers, pas seulement ceux actuellement ouverts."
+      ],
+      "Your server is not shared to anybody yet. You can search for users and groups above.": [
+        "Votre serveur n'est partag\u00e9 avec personne. Vous pouvez rechercher des utilisateurs et des groupes ci-dessus."
       ],
       "schema\u0004Shared link": [
         "Lien partag\u00e9"
@@ -4426,6 +4465,12 @@
       ],
       "main": [
         "principal"
+      ],
+      "main area content": [
+        "contenu de la zone principale"
+      ],
+      "main area toolbar": [
+        "barre d'outils de la zone principale"
       ],
       "main menu": [
         "menu principal"
@@ -9263,6 +9308,9 @@
       "Advanced Tools": [
         "Outils avanc\u00e9s"
       ],
+      "An error occurred while renaming the file.": [
+        "Une erreur est survenue lors du renommage du fichier."
+      ],
       "Are you sure you want to exit Jupyter Notebook?\n\nAny unsaved changes will be lost.": [
         "\u00cates-vous s\u00fbr de vouloir quitter Jupyter Notebook ?\n\nToutes les modifications non enregistr\u00e9es seront perdues."
       ],
@@ -9346,6 +9394,9 @@
       ],
       "Open\u2026": [
         "Ouvrir\u2026"
+      ],
+      "Rename Error": [
+        "Erreur lors du renommage"
       ],
       "Rename\u2026": [
         "Renommer\u2026"

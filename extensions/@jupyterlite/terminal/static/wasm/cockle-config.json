@@ -7,7 +7,7 @@
         }
       },
       "wasm": true,
-      "build_string": "h71f8667_5",
+      "build_string": "h4e94343_5",
       "platform": "emscripten-wasm32",
       "version": "0.3.0",
       "channel": "https://repo.prefix.dev/emscripten-forge-dev"
@@ -26,13 +26,25 @@
     },
     "grep": {
       "wasm": true,
-      "build_string": "ha2cbc09_6",
+      "build_string": "h4e94343_7",
       "platform": "emscripten-wasm32",
       "version": "3.11",
       "channel": "https://repo.prefix.dev/emscripten-forge-dev",
       "modules": {
         "grep": {
           "commands": "grep"
+        }
+      }
+    },
+    "less": {
+      "wasm": true,
+      "build_string": "he2bab3c_0",
+      "platform": "emscripten-wasm32",
+      "version": "668",
+      "channel": "https://repo.prefix.dev/emscripten-forge-dev",
+      "modules": {
+        "less": {
+          "commands": "less"
         }
       }
     },

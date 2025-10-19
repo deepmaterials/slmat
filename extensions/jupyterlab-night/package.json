@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab-night",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Dark theme for JupyterLab",
   "keywords": [
     "jupyter",
@@ -94,7 +94,7 @@
     "outputDir": "jupyterlab_night/labextension",
     "themePath": "style/index.css",
     "_build": {
-      "load": "static/remoteEntry.2105cdd7da221c68dcd3.js",
+      "load": "static/remoteEntry.18b3107a2356a7103aea.js",
       "extension": "./extension"
     }
   },

@@ -1,6 +1,6 @@
 {
   "name": "@jupyterlite/terminal",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "A terminal for JupyterLite",
   "keywords": [
     "jupyter",
@@ -59,19 +59,17 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "@jupyterlab/coreutils": "^6.3.5",
-    "@jupyterlab/services": "^7.3.5",
-    "@jupyterlab/terminal": "^4.3.5",
-    "@jupyterlab/terminal-extension": "^4.3.5",
-    "@jupyterlite/cockle": "^0.0.16",
-    "@jupyterlite/contents": "^0.5.1",
-    "@jupyterlite/server": "^0.5.1",
+    "@jupyterlab/coreutils": "^6.4.3",
+    "@jupyterlab/services": "^7.4.3",
+    "@jupyterlite/cockle": "^0.1.0",
+    "@jupyterlite/contents": "0.6.0",
+    "@jupyterlite/server": "0.6.0",
     "@lumino/coreutils": "^2.2.0",
     "mock-socket": "^9.3.1"
   },
   "devDependencies": {
-    "@jupyterlab/builder": "^4.3.5",
-    "@jupyterlab/testutils": "^4.3.5",
+    "@jupyterlab/builder": "^4.4.3",
+    "@jupyterlab/testutils": "^4.4.3",
     "@types/jest": "^29.2.0",
     "@types/json-schema": "^7.0.11",
     "@types/react": "^18.0.26",
@@ -99,6 +97,9 @@
     "webpack-cli": "^5.1.4",
     "yjs": "^13.5.0"
   },
+  "resolutions": {
+    "parse5": "7.2.1"
+  },
   "sideEffects": [
     "style/*.css",
     "style/index.js"
@@ -111,13 +112,10 @@
     "extension": true,
     "outputDir": "jupyterlite_terminal/labextension",
     "_build": {
-      "load": "static/remoteEntry.8daaa8361705786768db.js",
+      "load": "static/remoteEntry.dc76f4250c06409b7956.js",
       "extension": "./extension",
       "style": "./style"
     }
-  },
-  "jupyterlite": {
-    "liteExtension": true
   },
   "eslintIgnore": [
     "node_modules",
