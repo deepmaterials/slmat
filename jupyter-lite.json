@@ -4,6 +4,10 @@
     "baseUrl": "/slmat/",
     "terminalsAvailable": true,
     "appName": "SLakoNet Materials",
-    "appVersion": "0.1.0"
+    "appVersion": "0.1.0",
+    "contentsStorageName": "slmat-contents",
+    "settingsStorageName": "slmat-settings",
+    "disabledExtensions": [],
+    "collaborative": false
   }
 }
