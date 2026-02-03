@@ -4,7 +4,10 @@
     "appUrl": "./lab",
     "appVersion": "0.1.0",
     "baseUrl": "/slmat/",
+    "collaborative": false,
+    "contentsStorageName": "slmat-contents",
     "defaultKernelName": "python",
+    "disabledExtensions": [],
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
       {
@@ -414,6 +417,7 @@
         ]
       }
     },
+    "settingsStorageName": "slmat-settings",
     "terminalsAvailable": true
   },
   "jupyter-lite-schema-version": 0
