@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Build and Deploy 
 on:
   push:
     branches:
@@ -27,7 +27,7 @@ jobs:
           
       - name: Build the JupyterLite site
         run: |
-          jupyter lite build --contents content --output-dir dist --base-url /slmat
+          jupyter lite build --contents content --output-dir dist
           
       - name: Upload (dist)
         uses: actions/upload-artifact@v4
@@ -51,6 +51,9 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+
+
+
 # name: Build and Deploy
 
 # on:
