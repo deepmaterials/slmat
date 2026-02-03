@@ -26,9 +26,9 @@
     },
     "grep": {
       "wasm": true,
-      "build_string": "h4e94343_7",
+      "build_string": "h4e94343_0",
       "platform": "emscripten-wasm32",
-      "version": "3.11",
+      "version": "3.12",
       "channel": "https://repo.prefix.dev/emscripten-forge-dev",
       "modules": {
         "grep": {

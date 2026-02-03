@@ -93,6 +93,5 @@
     "extension": true,
     "outputDir": "labextension",
     "schemaDir": "./schema"
-  },
-  "gitHead": "efcf380707fd57050fc781e2ce991b557ec5ac0d"
+  }
 }

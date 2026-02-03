@@ -495,9 +495,9 @@ function createWasm() {
   // performing other necessary setup
   /** @param {WebAssembly.Module=} module*/ function receiveInstance(instance, module) {
     wasmExports = instance.exports;
-    wasmMemory = wasmExports["A"];
+    wasmMemory = wasmExports["z"];
     updateMemoryViews();
-    addOnInit(wasmExports["B"]);
+    addOnInit(wasmExports["A"]);
     removeRunDependency("wasm-instantiate");
     return wasmExports;
   }
@@ -3708,12 +3708,6 @@ function _fd_write(fd, iov, iovcnt, pnum) {
 
 _splice.stub = true;
 
-/** @type {function(...*):?} */ function _wmempcpy() {
-  abort("missing function: wmempcpy");
-}
-
-_wmempcpy.stub = true;
-
 var handleException = e => {
   // Certain exception types we do not treat as errors since they are used for
   // internal control flow.
@@ -3768,44 +3762,43 @@ MEMFS.doesNotExistError = new FS.ErrnoError(44);
 
 var wasmImports = {
   /** @export */ a: ___assert_fail,
-  /** @export */ x: ___syscall_chdir,
-  /** @export */ y: ___syscall_fchdir,
+  /** @export */ j: ___syscall_chdir,
+  /** @export */ k: ___syscall_fchdir,
   /** @export */ b: ___syscall_fcntl64,
-  /** @export */ w: ___syscall_fstat64,
-  /** @export */ o: ___syscall_getdents64,
-  /** @export */ l: ___syscall_ioctl,
-  /** @export */ t: ___syscall_lstat64,
-  /** @export */ u: ___syscall_newfstatat,
+  /** @export */ x: ___syscall_fstat64,
+  /** @export */ p: ___syscall_getdents64,
+  /** @export */ y: ___syscall_ioctl,
+  /** @export */ u: ___syscall_lstat64,
+  /** @export */ v: ___syscall_newfstatat,
   /** @export */ e: ___syscall_openat,
-  /** @export */ v: ___syscall_stat64,
-  /** @export */ z: __abort_js,
-  /** @export */ p: __emscripten_get_progname,
-  /** @export */ n: _emscripten_get_heap_max,
-  /** @export */ m: _emscripten_resize_heap,
-  /** @export */ r: _environ_get,
-  /** @export */ s: _environ_sizes_get,
-  /** @export */ d: _exit,
-  /** @export */ c: _fd_close,
-  /** @export */ i: _fd_fdstat_get,
+  /** @export */ w: ___syscall_stat64,
+  /** @export */ l: __abort_js,
+  /** @export */ q: __emscripten_get_progname,
+  /** @export */ o: _emscripten_get_heap_max,
+  /** @export */ n: _emscripten_resize_heap,
+  /** @export */ s: _environ_get,
+  /** @export */ t: _environ_sizes_get,
+  /** @export */ c: _exit,
+  /** @export */ d: _fd_close,
+  /** @export */ f: _fd_fdstat_get,
   /** @export */ g: _fd_read,
-  /** @export */ q: _fd_seek,
-  /** @export */ f: _fd_write,
-  /** @export */ k: _proc_exit,
-  /** @export */ j: _splice,
-  /** @export */ h: _wmempcpy
+  /** @export */ r: _fd_seek,
+  /** @export */ h: _fd_write,
+  /** @export */ m: _proc_exit,
+  /** @export */ i: _splice
 };
 
 var wasmExports = createWasm();
 
-var ___wasm_call_ctors = () => (___wasm_call_ctors = wasmExports["B"])();
+var ___wasm_call_ctors = () => (___wasm_call_ctors = wasmExports["A"])();
 
-var _main = Module["_main"] = (a0, a1) => (_main = Module["_main"] = wasmExports["C"])(a0, a1);
+var _main = Module["_main"] = (a0, a1) => (_main = Module["_main"] = wasmExports["B"])(a0, a1);
 
-var ___funcs_on_exit = () => (___funcs_on_exit = wasmExports["E"])();
+var ___funcs_on_exit = () => (___funcs_on_exit = wasmExports["D"])();
 
-var _fflush = a0 => (_fflush = wasmExports["F"])(a0);
+var _fflush = a0 => (_fflush = wasmExports["E"])(a0);
 
-var __emscripten_stack_alloc = a0 => (__emscripten_stack_alloc = wasmExports["G"])(a0);
+var __emscripten_stack_alloc = a0 => (__emscripten_stack_alloc = wasmExports["F"])(a0);
 
 // include: postamble.js
 // === Auto-generated postamble setup entry stuff ===

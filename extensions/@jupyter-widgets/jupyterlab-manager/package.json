@@ -94,9 +94,8 @@
     "outputDir": "labextension",
     "schemaDir": "./schema",
     "_build": {
-      "load": "static/remoteEntry.35b6c65bd99dab37b910.js",
+      "load": "static/remoteEntry.9077b3d2deaffb329dfc.js",
       "extension": "./extension"
     }
-  },
-  "gitHead": "efcf380707fd57050fc781e2ce991b557ec5ac0d"
+  }
 }

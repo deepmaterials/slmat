@@ -478,6 +478,9 @@
       "%1 (%2)": [
         "%1 (%2)"
       ],
+      "%1 File": [
+        "Fichier %1"
+      ],
       "%1 Item": [
         "%1 \u00e9l\u00e9ment",
         "%1 \u00e9l\u00e9ments"
@@ -706,8 +709,23 @@
       "Are you sure you want to shut down the following unused kernels?": [
         "\u00cates-vous s\u00fbr de vouloir arr\u00eater les noyaux inutilis\u00e9s suivants ?"
       ],
+      "Arguments to pass to the commands": [
+        "Arguments \u00e0 passer aux commandes"
+      ],
+      "Array of command IDs to attempt to run": [
+        "Liste des IDs de commandes \u00e0 ex\u00e9cuter"
+      ],
+      "Array of command IDs to run": [
+        "Liste des IDs de commandes \u00e0 ex\u00e9cuter"
+      ],
       "Asterisk": [
         "Asterisk"
+      ],
+      "Audio": [
+        "Audio"
+      ],
+      "Audio Viewer": [
+        "Visionneuse audio"
       ],
       "Auto Close Brackets": [
         "Fermeture automatique des crochets"
@@ -738,6 +756,9 @@
       ],
       "Brainfuck": [
         "Brainfuck"
+      ],
+      "Breakpoint": [
+        "Point d'arr\u00eat"
       ],
       "Breakpoints": [
         "Points d'arr\u00eat"
@@ -846,6 +867,9 @@
       ],
       "Change Console Prompt Position": [
         "Changer la position de la cellule \u00e9ditable de la console"
+      ],
+      "Change Font Size": [
+        "Changer la taille de la police"
       ],
       "Change Kernel\u2026": [
         "Changer de noyau\u2026"
@@ -1206,6 +1230,9 @@
       "Could Not Open Recent": [
         "Impossible d'ouvrir l'\u00e9l\u00e9ment r\u00e9cent"
       ],
+      "Could not display output data": [
+        "Impossible d'afficher les donn\u00e9es de sortie"
+      ],
       "Could not find path: %1": [
         "Impossible de trouver le chemin : %1"
       ],
@@ -1230,6 +1257,9 @@
       "Create a duplicate of this cell below": [
         "Cr\u00e9er un doublon de cette cellule en dessous",
         "Cr\u00e9er les doublons de %1 cellules en dessous"
+      ],
+      "Create a new %1 File": [
+        "Cr\u00e9er un nouveau fichier %1"
       ],
       "Create a new Julia file": [
         "Cr\u00e9er un nouveau fichier Julia"
@@ -1258,6 +1288,12 @@
       "Ctrl + click to open in the Main Area": [
         "Ctrl + clic pour ouvrir dans la zone principale"
       ],
+      "Current working directory for the new notebook": [
+        "R\u00e9pertoire de travail actuel pour le nouveau notebook"
+      ],
+      "Current working directory for the terminal": [
+        "R\u00e9pertoire de travail actuel du terminal"
+      ],
       "Cursor blinking rate": [
         "Taux de clignotement du curseur"
       ],
@@ -1266,6 +1302,9 @@
       ],
       "Custom editor styles": [
         "Styles personnalis\u00e9s de l'\u00e9diteur"
+      ],
+      "Custom label for the command": [
+        "Libell\u00e9 personnalis\u00e9 pour la commande"
       ],
       "Customise your experience/improve performance by disabling plugins you do not need. To disable or uninstall an entire extension use the Extension Manager instead. Changes will apply after reloading JupyterLab.": [
         "Personnaliser votre exp\u00e9rience/am\u00e9liorer les performances en d\u00e9sactivant les plugins dont vous n'avez pas besoin. Pour d\u00e9sactiver ou d\u00e9sinstaller une extension, utilisez le gestionnaire d'extensions. Les modifications s'appliqueront apr\u00e8s le rechargement de JupyterLab."
@@ -1311,11 +1350,17 @@
       "Debug": [
         "D\u00e9boguer"
       ],
+      "Debug Console": [
+        "Console de d\u00e9bogage"
+      ],
       "Debugger": [
         "D\u00e9bogueur"
       ],
       "Debugger Panel": [
         "Panneau du d\u00e9bogueur"
+      ],
+      "Debugger does not have stopped threads - cannot evaluate": [
+        "Le d\u00e9bogueur n'a pas arr\u00eat\u00e9 de threads - impossible d'\u00e9valuer"
       ],
       "Debugger section": [
         "D\u00e9bogueur"
@@ -1394,6 +1439,9 @@
       "Description": [
         "Description"
       ],
+      "Description of the exception filter": [
+        "Description du filtre d'exception"
+      ],
       "Deselect All Cells": [
         "D\u00e9s\u00e9lectionner toutes les cellules"
       ],
@@ -1470,6 +1518,9 @@
         "Afficher les langues"
       ],
       "Display the completion helper.": [
+        "Afficher l'aide de compl\u00e9tion."
+      ],
+      "Display the tab completion widget.": [
         "Afficher l'aide de compl\u00e9tion."
       ],
       "Distributions": [
@@ -1669,8 +1720,17 @@
       "Evaluate Code": [
         "\u00c9valuer le code"
       ],
+      "Evaluation resulted in an error": [
+        "Une erreur s'est produite lors de l'\u00e9valuation"
+      ],
+      "Exception filter to pause on": [
+        "Filtre d'exceptions \u00e0 mettre en pause"
+      ],
       "Executable Script": [
         "Script ex\u00e9cutable"
+      ],
+      "Execute the current line in debug console.": [
+        "Ex\u00e9cute la ligne courante dans la console de d\u00e9bogage."
       ],
       "Execute with Enter": [
         "Ex\u00e9cuter avec Entr\u00e9e"
@@ -1805,6 +1865,9 @@
       "File name": [
         "Nom du fichier"
       ],
+      "File uploads are disabled": [
+        "Le t\u00e9l\u00e9versement de fichiers est d\u00e9sactiv\u00e9"
+      ],
       "Files still uploading": [
         "Fichiers en cours de chargement"
       ],
@@ -1847,6 +1910,15 @@
       "Flip image vertically": [
         "Miroir vertical"
       ],
+      "Fold All Regions": [
+        "Replier toutes les r\u00e9gions"
+      ],
+      "Fold All Subregions": [
+        "Replier toutes les sous r\u00e9gions"
+      ],
+      "Fold Current Region": [
+        "Replier la r\u00e9gion actuelle"
+      ],
       "Fold line": [
         "Replier la ligne"
       ],
@@ -1868,6 +1940,12 @@
       "For more information, see": [
         "Pour plus d'informations, voir"
       ],
+      "Force enable/disable auto closing brackets": [
+        "Forcer l'\u00e9tat d'activation de la fermeture automatique des parenth\u00e8ses"
+      ],
+      "Force toggling the auto closing brackets setting": [
+        "Forcer la fermeture automatique des parenth\u00e8ses"
+      ],
       "Forget": [
         "Supprimer"
       ],
@@ -1879,6 +1957,9 @@
       ],
       "Fortran": [
         "Fortran"
+      ],
+      "Fragment identifier to navigate to": [
+        "Identifiant du fragment vers lequel naviguer"
       ],
       "Fullscreen Mode": [
         "Mode plein \u00e9cran"
@@ -2168,6 +2249,12 @@
       "Julia File": [
         "Fichiers Julia"
       ],
+      "Jump to cell": [
+        "Aller \u00e0 la cellule"
+      ],
+      "Jump to current or last executed cell": [
+        "Aller \u00e0 la derni\u00e8re cellule active ou ex\u00e9cut\u00e9e"
+      ],
       "Jupyter Forum": [
         "Forum Jupyter"
       ],
@@ -2204,6 +2291,18 @@
       "Kernel %1": [
         "Noyau %1"
       ],
+      "Kernel ID to create console for": [
+        "Identifiant du noyau pour la console \u00e0 cr\u00e9er"
+      ],
+      "Kernel ID to create notebook for": [
+        "Identifiant du noyau pour le notebook \u00e0 cr\u00e9er"
+      ],
+      "Kernel ID to shut down": [
+        "Identifiant du noyau \u00e0 arr\u00eater"
+      ],
+      "Kernel ID to use for the new notebook": [
+        "Identifiant du noyau \u00e0 utiliser pour le nouveau notebook"
+      ],
       "Kernel Icon": [
         "Ic\u00f4ne du noyau"
       ],
@@ -2230,6 +2329,9 @@
       ],
       "Kernel Terminating": [
         "Fermeture du noyau"
+      ],
+      "Kernel name to use for the new notebook": [
+        "Nom du noyau \u00e0 utiliser pour le nouveau notebook"
       ],
       "Kernel sources panel toolbar": [
         "Barre d'outils du panneau des sources du noyau"
@@ -2375,8 +2477,14 @@
       "Match Whole Word": [
         "Uniquement les mots entiers"
       ],
+      "MathJax Copy Latex": [
+        "Copie MathJax Latex"
+      ],
       "Mathematica": [
         "Mathematica"
+      ],
+      "Mathjax Scale ": [
+        "\u00c9chelle Mathjax "
       ],
       "Maximum number of suggestions": [
         "Nombre maximal de suggestions"
@@ -2398,6 +2506,9 @@
       ],
       "Message from ": [
         "Message de "
+      ],
+      "Mode for opening files (e.g., single-document)": [
+        "Mode d'ouverture des fichiers (ex. : document unique)"
       ],
       "Mode: %1": [
         "Mode : %1"
@@ -2460,6 +2571,9 @@
       "Name": [
         "Nom"
       ],
+      "Name of the session": [
+        "Nom de la session"
+      ],
       "Name:": [
         "Nom:"
       ],
@@ -2480,6 +2594,9 @@
       ],
       "Never show this notification again.": [
         "Ne plus afficher cette notification."
+      ],
+      "New %1 File": [
+        "Nouveau fichier %1"
       ],
       "New Console": [
         "Nouvelle console"
@@ -2634,6 +2751,9 @@
       "Notebook": [
         "Notebook"
       ],
+      "Notebook (no kernel)": [
+        "Notebook (sans noyau)"
+      ],
       "Notebook Cell Operations": [
         "Op\u00e9rations des cellules du notebook"
       ],
@@ -2694,6 +2814,9 @@
       "Open %1": [
         "Ouvrir %1"
       ],
+      "Open All": [
+        "Tout ouvrir"
+      ],
       "Open Code Viewer": [
         "Ouvrir la visionneuse de code"
       ],
@@ -2702,6 +2825,9 @@
       ],
       "Open Error": [
         "Erreur lors de l'ouverture"
+      ],
+      "Open File": [
+        "Ouvrir un fichier"
       ],
       "Open File Menu": [
         "Ouvrir le menu Fichier"
@@ -2796,6 +2922,12 @@
       "Open the tooltip": [
         "Ouvrir l'info-bulle"
       ],
+      "Options for opening the cloned document": [
+        "Options d'ouverture du document clon\u00e9"
+      ],
+      "Options for opening the preview": [
+        "Options pour ouvrir l'aper\u00e7u"
+      ],
       "Other": [
         "Autre"
       ],
@@ -2866,6 +2998,15 @@
       "Path to save the workspace in": [
         "Chemin dans lequel enregistrer l'espace de travail"
       ],
+      "Path to the file or directory to open": [
+        "Chemin vers le fichier ou le dossier \u00e0 ouvrir"
+      ],
+      "Path to the session to open": [
+        "Le chemin de la session \u00e0 ouvrir"
+      ],
+      "Path to the source file to open": [
+        "Chemin vers le fichier source \u00e0 ouvrir"
+      ],
       "Path:": [
         "Chemin d'acc\u00e8s:"
       ],
@@ -2877,6 +3018,9 @@
       ],
       "Pause on exception filter": [
         "Suspendre l'ex\u00e9cution suite \u00e0 une exception"
+      ],
+      "Paused in Debugger": [
+        "En pause dans le d\u00e9bogueur"
       ],
       "Perl": [
         "Perl"
@@ -2991,6 +3135,9 @@
       ],
       "Reason given:": [
         "Raison donn\u00e9e:"
+      ],
+      "Recent document to open": [
+        "Document r\u00e9cent \u00e0 ouvrir"
       ],
       "Recently Closed": [
         "R\u00e9cemment ferm\u00e9s"
@@ -3429,6 +3576,9 @@
       "Scope": [
         "P\u00e9rim\u00e8tre d\u2019application"
       ],
+      "Scope of the file location": [
+        "Port\u00e9e de l'emplacement de fichier"
+      ],
       "Search": [
         "Rechercher"
       ],
@@ -3466,6 +3616,9 @@
       ],
       "Search only in the selected cells or text (depending on edit/command mode).": [
         "Rechercher uniquement dans les cellules ou le texte s\u00e9lectionn\u00e9s (selon le mode \u00e9dition/commande)."
+      ],
+      "Search query to filter settings": [
+        "Requ\u00eate de recherche pour filtrer les param\u00e8tres"
       ],
       "Search settings\u2026": [
         "Param\u00e8tres de recherche\u2026"
@@ -3550,6 +3703,9 @@
       ],
       "Select the completion suggestion.": [
         "S\u00e9lectionne la suggestion de compl\u00e9tion."
+      ],
+      "Selected breakpoint": [
+        "Point d\u2019arr\u00eat s\u00e9lectionn\u00e9"
       ],
       "Selecting \"Trust\" will re-render this notebook in a trusted state.": [
         "En s\u00e9lectionnant \"Approuver\", ce notebook sera rendu en faisant confiance \u00e0 son contenu."
@@ -3715,6 +3871,9 @@
       ],
       "Show in File Browser": [
         "Ouvrir dans l'explorateur de fichier"
+      ],
+      "Show more outputs": [
+        "Afficher plus de r\u00e9sultats"
       ],
       "Show output headings": [
         "Afficher les titres des sorties de cellules"
@@ -3932,6 +4091,15 @@
       "Terminal %1": [
         "Terminal %1"
       ],
+      "Terminal session name": [
+        "Nom de la session de terminal"
+      ],
+      "Terminal session name to open": [
+        "Nom de la session de terminal \u00e0 ouvrir"
+      ],
+      "Terminal theme to set": [
+        "Th\u00e8me du terminal \u00e0 d\u00e9finir"
+      ],
       "Terminals": [
         "Terminaux"
       ],
@@ -3950,6 +4118,12 @@
       "Text File": [
         "Fichier texte"
       ],
+      "Text to display in the inspector": [
+        "Texte \u00e0 afficher dans l'inspecteur"
+      ],
+      "Text to replace the selection with": [
+        "Le texte par lequel remplacer la s\u00e9lection"
+      ],
       "Textile": [
         "Textile"
       ],
@@ -3959,8 +4133,32 @@
       "The \"%1\" workspace will be saved in the chosen directory as \"%1%2\".": [
         "L'espace de travail \"%1\" sera sauvegard\u00e9 dans le r\u00e9pertoire choisi sous la forme \"%1%2\"."
       ],
+      "The CSS property key to modify": [
+        "Le nom de la propri\u00e9t\u00e9 CSS \u00e0 modifier"
+      ],
+      "The ID to assign to the widget": [
+        "L'ID \u00e0 assigner au widget"
+      ],
       "The JupyterLab development team is excited to have a robust\nthird-party extension community. However, we do not review\nthird-party extensions, and some extensions may introduce security\nrisks or contain malicious code that runs on your machine. Moreover in order\nto work, this panel needs to fetch data from web services. Do you agree to\nactivate this feature?": [
         "L'\u00e9quipe de d\u00e9veloppement de JupyterLab est heureuse d'avoir une solide communaut\u00e9 d'extension\nde tiers. Cependant, nous ne validons pas\nles extensions tierces et certaines extensions peuvent introduire des risques de s\u00e9curit\u00e9\nou contenir du code malveillant qui s'ex\u00e9cute sur votre machine. De plus pour\nfonctionner, ce panneau doit r\u00e9cup\u00e9rer des donn\u00e9es de services web. Acceptez-vous\nd'activer cette fonctionnalit\u00e9 ?"
+      ],
+      "The MIME type of the content": [
+        "Le type MIME du contenu"
+      ],
+      "The URL hash": [
+        "Le hachage de l'URL"
+      ],
+      "The URL path": [
+        "Le chemin de l'URL"
+      ],
+      "The URL search string containing query parameters": [
+        "La cha\u00eene de recherche d'URL contenant les param\u00e8tres de la requ\u00eate"
+      ],
+      "The base path for the console": [
+        "Le chemin de base de la console"
+      ],
+      "The caption for the command": [
+        "La l\u00e9gende de la commande"
       ],
       "The cell has not been executed to avoid kernel deadlock as there is another pending input! Submit your pending input and try again.": [
         "La cellule n'a pas \u00e9t\u00e9 ex\u00e9cut\u00e9e pour \u00e9viter de bloquer le noyau car une autre entr\u00e9e est en attente ! Soumettez une entr\u00e9e et r\u00e9essayez."
@@ -3977,11 +4175,56 @@
       "The checkpoint was last updated at: ": [
         "Le point de contr\u00f4le a \u00e9t\u00e9 mis \u00e0 jour pour la derni\u00e8re fois \u00e0: "
       ],
+      "The code to inject": [
+        "Le code \u00e0 injecter"
+      ],
+      "The column number to go to (1-indexed)": [
+        "Le num\u00e9ro de colonne vers lequel aller (commence \u00e0 1)"
+      ],
+      "The command icon.": [
+        "L'ic\u00f4ne de la commande."
+      ],
+      "The command label.": [
+        "Le libell\u00e9 de commande."
+      ],
+      "The content to display in the code viewer": [
+        "Le contenu \u00e0 afficher dans la visionneuse de code"
+      ],
+      "The current working directory": [
+        "Le r\u00e9pertoire de travail actuel"
+      ],
+      "The current working directory path": [
+        "Le chemin du dossier de travail actuel"
+      ],
       "The debugger service is needed to open the source %1": [
         "Le service de d\u00e9bogage est n\u00e9cessaire pour ouvrir la source %1"
       ],
+      "The display name of the language": [
+        "Le nom d'affichage de la langue"
+      ],
+      "The display name of the theme": [
+        "Le nom d'affichage du th\u00e8me"
+      ],
+      "The export format (e.g., pdf, html, latex)": [
+        "Le format d'export (par exemple, pdf, html, latex)"
+      ],
+      "The file extension for the new file": [
+        "L'extension de fichier pour le nouveau fichier"
+      ],
+      "The file extension to derive MIME type from": [
+        "L'extension de fichier d\u00e9finissant le type MIME"
+      ],
+      "The file extension.": [
+        "L'extension de fichier."
+      ],
+      "The file path to open": [
+        "Le chemin d'acc\u00e8s du fichier \u00e0 ouvrir"
+      ],
       "The file size is %1 MB. Do you still want to upload it?": [
         "La taille du fichier est de %1 Mo. Voulez-vous quand-m\u00eame le t\u00e9l\u00e9charger ?"
+      ],
+      "The first %1 are displayed": [
+        "Les premiers %1 sont affich\u00e9s"
       ],
       "The following plugins cannot be disabled as they are locked: ": [
         "Les plugins suivants ne peuvent pas \u00eatre d\u00e9sactiv\u00e9s car ils sont verrouill\u00e9s : "
@@ -3989,8 +4232,38 @@
       "The following plugins cannot be enabled as they are locked: ": [
         "Les plugins suivants ne peuvent pas \u00eatre activ\u00e9s car ils sont verrouill\u00e9s : "
       ],
+      "The font name": [
+        "Le nom de la police de caract\u00e8res"
+      ],
+      "The font size change delta (positive to increase, negative to decrease)": [
+        "Le delta de la taille de la police (positif pour augmenter, n\u00e9gatif pour diminuer)"
+      ],
+      "The font size key to decrease (e.g., \"code-font-size\", \"content-font-size1\", \"ui-font-size1\")": [
+        "La nom de taille de la police \u00e0 diminuer (par exemple, \"code-font-size\", \"content-font-size1\", \"ui-font-size1\")"
+      ],
+      "The font size key to increase (e.g., \"code-font-size\", \"content-font-size1\", \"ui-font-size1\")": [
+        "La nom de taille de la police \u00e0 augmenter (par exemple, \"code-font-size\", \"content-font-size1\", \"ui-font-size1\")"
+      ],
+      "The frame ID": [
+        "L'ID de la frame"
+      ],
+      "The icon class for the command": [
+        "La classe d'ic\u00f4ne pour la commande"
+      ],
       "The indentation is a `Tab` or the number of spaces. This defaults to 4 spaces.": [
         "L'indentation est une tabulation (`Tab`) ou le nombre d'espaces. La valeur par d\u00e9faut est de 4 espaces."
+      ],
+      "The index of the cell to create an output view for": [
+        "L'index de la cellule pour laquelle cr\u00e9er un affichage des sorties"
+      ],
+      "The index of the sidebar widget": [
+        "L'index du widget de la barre lat\u00e9rale"
+      ],
+      "The insert mode for the dock layout": [
+        "Le mode d'insertion dans l'interface principale"
+      ],
+      "The interaction mode for the console": [
+        "Le mode d'interaction de la console"
       ],
       "The kernel for %1 appears to be terminating. You can not run any cell for now.": [
         "Le noyau pour %1 semble \u00eatre en train de se fermer. Vous ne pouvez pas ex\u00e9cuter de cellule pour le moment."
@@ -3998,17 +4271,86 @@
       "The kernel for %1 appears to have died. It will restart automatically.": [
         "Le noyau pour %1 semble \u00eatre mort. Il va red\u00e9marrer automatiquement."
       ],
+      "The kernel preference for the console": [
+        "Les pr\u00e9f\u00e9rences du noyau pour la console"
+      ],
+      "The label for the code viewer": [
+        "Le libell\u00e9 de la visionneuse de code"
+      ],
+      "The label to display for the command": [
+        "Le libell\u00e9 \u00e0 afficher pour la commande"
+      ],
+      "The label to display for this format": [
+        "Le nom \u00e0 afficher pour ce format"
+      ],
+      "The label to show in the command palette": [
+        "Le libell\u00e9 \u00e0 afficher dans la palette de commandes"
+      ],
+      "The label to show in the launcher": [
+        "Le libell\u00e9 \u00e0 afficher dans le lanceur"
+      ],
+      "The language name to change to": [
+        "Le nom de la langue \u00e0 changer en"
+      ],
       "The layout `mode` can be \"single-document\" or \"multiple-document\".": [
         "Le `mode` de mise en page peut \u00eatre \"one-document\" ou \"multiple-document\"."
+      ],
+      "The layout mode": [
+        "Mode d'affichage"
+      ],
+      "The line number to go to (1-indexed)": [
+        "Le num\u00e9ro de ligne vers lequel aller (commence \u00e0 1)"
       ],
       "The loading screen is taking a long time.\nWould you like to clear the workspace or keep waiting?": [
         "L'\u00e9cran de chargement prend beaucoup de temps. \nVoulez-vous vider l'espace de travail ou continuer \u00e0 attendre ?"
       ],
+      "The log level to set": [
+        "Le niveau de journalisation \u00e0 d\u00e9finir"
+      ],
       "The maximum number of suggestions to retrieve from history.": [
         "Le nombre maximal de suggestions \u00e0 r\u00e9cup\u00e9rer de l'historique."
       ],
+      "The metadata for the code": [
+        "Les m\u00e9tadonn\u00e9es du code"
+      ],
+      "The name of the icon to use": [
+        "Le nom de l'ic\u00f4ne \u00e0 utiliser"
+      ],
+      "The name of the variable to inspect": [
+        "Le nom de la variable \u00e0 inspecter"
+      ],
+      "The name of the variable to render": [
+        "Le nom de la variable \u00e0 afficher"
+      ],
+      "The name of the widget factory to use": [
+        "Le nom de la fabrique de widgets \u00e0 utiliser"
+      ],
       "The notebook is empty. Click the + button on the toolbar to add a new cell.": [
         "Le notebook ne contient aucune cellule. Cliquez sur le bouton + de la barre d'outils pour ajouter une nouvelle cellule."
+      ],
+      "The number of spaces for indentation (or Tab for tab indentation)": [
+        "Le nombre d'espaces (ou de tabulations) pour l'indentation"
+      ],
+      "The path of the console session": [
+        "Le chemin de la session de console"
+      ],
+      "The path of the file to open in browser tab": [
+        "Le chemin du fichier \u00e0 ouvrir dans l'onglet du navigateur"
+      ],
+      "The path of the session to open": [
+        "Le chemin de la session \u00e0 ouvrir"
+      ],
+      "The path to navigate to": [
+        "Le chemin vers lequel naviguer"
+      ],
+      "The path to open in the file browser": [
+        "Le chemin \u00e0 ouvrir dans le navigateur de fichiers"
+      ],
+      "The path to the markdown file to preview": [
+        "Le chemin du fichier markdown \u00e0 pr\u00e9visualiser"
+      ],
+      "The path to the notebook containing the cell": [
+        "Le chemin vers le notebook contenant la cellule"
       ],
       "The path: %1 was not found. JupyterLab redirected to: %2": [
         "Le chemin : %1 n'a pas \u00e9t\u00e9 trouv\u00e9. JupyterLab a \u00e9t\u00e9 redirig\u00e9 vers : %2"
@@ -4016,14 +4358,71 @@
       "The plugin \"%1\" cannot be disabled as it is required by other plugins:": [
         "Le plugin \"%1\" ne peut pas \u00eatre d\u00e9sactiv\u00e9 car il est requis par d'autres plugins:"
       ],
+      "The preferred dark theme name": [
+        "Le nom du th\u00e8me sombre pr\u00e9f\u00e9r\u00e9"
+      ],
+      "The preferred light theme name": [
+        "Le nom du th\u00e8me clair pr\u00e9f\u00e9r\u00e9"
+      ],
       "The property inspector allows to view and edit properties of a selected notebook.": [
         "L'inspecteur de propri\u00e9t\u00e9s permet de visualiser et de modifier les propri\u00e9t\u00e9s du notebook s\u00e9lectionn\u00e9."
+      ],
+      "The reference widget": [
+        "Le widget de r\u00e9f\u00e9rence"
+      ],
+      "The reference widget id": [
+        "L'id du widget de r\u00e9f\u00e9rence"
+      ],
+      "The reference widget id for the insert location": [
+        "L'id de r\u00e9f\u00e9rence du widget pour l'emplacement d'insertion"
+      ],
+      "The report format to use for download": [
+        "Le format du rapport \u00e0 utiliser pour le t\u00e9l\u00e9chargement"
+      ],
+      "The scale factor for MathJax rendering": [
+        "Le facteur d'\u00e9chelle du rendu MathJax"
+      ],
+      "The search query for plugins": [
+        "La requ\u00eate de recherche de plugins"
+      ],
+      "The sidebar side": [
+        "Le c\u00f4t\u00e9 de la barre lat\u00e9rale"
+      ],
+      "The source for the log console": [
+        "La source de la console de journalisation"
+      ],
+      "The tab insert mode": [
+        "Le mode d'insertion de l'onglet"
       ],
       "The table of contents shows headings in notebooks and supported files.": [
         "La table des mati\u00e8res affiche les titres dans les notebooks et les fichiers pris en charge."
       ],
+      "The text to replace the current selection with": [
+        "Le texte par lequel remplacer la s\u00e9lection actuelle"
+      ],
+      "The text to replace the selection with": [
+        "Le texte par lequel remplacer la s\u00e9lection"
+      ],
+      "The text to replace with": [
+        "Le texte \u00e0 remplacer par"
+      ],
+      "The text to search for": [
+        "Le texte \u00e0 rechercher"
+      ],
+      "The theme name to change to": [
+        "Le nom du th\u00e8me vers lequel basculer"
+      ],
+      "The theme name to switch to": [
+        "Le nom du th\u00e8me vers lequel basculer"
+      ],
       "The variable is undefined in the active context.": [
         "La variable n'est pas d\u00e9finie dans le contexte actif."
+      ],
+      "The variable reference to inspect": [
+        "La r\u00e9f\u00e9rence de la variable \u00e0 inspecter"
+      ],
+      "The widget id to activate": [
+        "L'id du widget \u00e0 activer"
       ],
       "Theme": [
         "Th\u00e8me"
@@ -4175,17 +4574,38 @@
       "Type": [
         "Type"
       ],
+      "Type Markdown and LaTeX: $ \u03b1^2 $": [
+        "Tapez du Markdown et du LaTeX : $ \u03b1^2 $"
+      ],
+      "Type of session (console or notebook)": [
+        "Type de session (console ou notebook)"
+      ],
+      "Type of settings editor to open": [
+        "Type de l'\u00e9diteur de param\u00e8tres \u00e0 ouvrir"
+      ],
       "TypeScript": [
         "TypeScript"
       ],
       "URL": [
         "URL"
       ],
+      "URL of the file to open": [
+        "URL du fichier \u00e0 ouvrir"
+      ],
       "Undo": [
         "Annuler"
       ],
       "Undo Cell Operation": [
         "Annuler l'op\u00e9ration de cellule"
+      ],
+      "Unfold All Regions": [
+        "D\u00e9plier toutes les r\u00e9gions"
+      ],
+      "Unfold All Subregions": [
+        "D\u00e9plier toutes les sous-r\u00e9gions"
+      ],
+      "Unfold Current Region": [
+        "D\u00e9plier la r\u00e9gion actuelle"
       ],
       "Unfold line": [
         "D\u00e9plier la ligne"
@@ -4234,6 +4654,12 @@
       ],
       "Upload Files": [
         "Charger des fichiers"
+      ],
+      "Upload complete (%1 files)": [
+        "T\u00e9l\u00e9versement termin\u00e9 (%1 fichiers)"
+      ],
+      "Uploaded %1%2": [
+        "%1%2 t\u00e9l\u00e9vers\u00e9"
       ],
       "Uploading\u2026": [
         "Envoi en cours\u2026"
@@ -4295,6 +4721,12 @@
       "Version: %1": [
         "Version : %1"
       ],
+      "Video": [
+        "Vid\u00e9o"
+      ],
+      "Video Viewer": [
+        "Visionneuse vid\u00e9o"
+      ],
       "Virtual Scrollbar": [
         "Barre de d\u00e9filement virtuelle"
       ],
@@ -4307,6 +4739,12 @@
       "WebAssembly": [
         "WebAssembly"
       ],
+      "Whether command is called from launcher": [
+        "Si la commande est appel\u00e9e depuis le lanceur"
+      ],
+      "Whether executed from toolbar": [
+        "Si ex\u00e9cut\u00e9 depuis la barre d'outils"
+      ],
       "Whether the HTML file is trusted.\n    Trusting the file allows scripts to run in it,\n    which may result in security risks.\n    Only enable for files you trust.": [
         "Si le fichier HTML est fiable.\n  Faire confiance au fichier permet \u00e0 des scripts de s'ex\u00e9cuter dedans,\n  ce qui peut entra\u00eener des risques de s\u00e9curit\u00e9.\n  Activer uniquement pour les fichiers de confiance."
       ],
@@ -4316,8 +4754,80 @@
       "Whether the HTML file is trusted.\nTrusting the file allows scripts to run in it,\nwhich may result in security risks.\nOnly enable for files you trust.": [
         "Si le fichier HTML est fiable.\nFaire confiance au fichier permet \u00e0 des scripts JavaScript de s'ex\u00e9cuter,\nce qui peut entra\u00eener des risques de s\u00e9curit\u00e9.\nActiver uniquement pour les fichiers fiables."
       ],
+      "Whether the command is being called from the palette": [
+        "Si la commande est appel\u00e9e depuis la palette"
+      ],
+      "Whether the command is called from a menu context": [
+        "Si la commande est appel\u00e9e depuis un menu contextuel"
+      ],
+      "Whether the command is called from the command palette": [
+        "Si la commande est appel\u00e9e depuis la palette"
+      ],
+      "Whether the command is called from toolbar": [
+        "Si la commande est appel\u00e9e depuis la barre d'outils"
+      ],
+      "Whether the command is executed from a toolbar": [
+        "Si la commande est ex\u00e9cut\u00e9e depuis une barre d'outils"
+      ],
+      "Whether the command is executed from context menu": [
+        "Si la commande est ex\u00e9cut\u00e9e depuis le menu contextuel"
+      ],
+      "Whether the command is executed from launcher": [
+        "Si la commande est ex\u00e9cut\u00e9e depuis le lanceur"
+      ],
+      "Whether the command is executed from palette": [
+        "Si la commande est ex\u00e9cut\u00e9e depuis la palette"
+      ],
+      "Whether the command is executed from the launcher": [
+        "Si la commande est ex\u00e9cut\u00e9e depuis le lanceur"
+      ],
+      "Whether the command is executed from the palette": [
+        "Si la commande est ex\u00e9cut\u00e9e depuis la palette"
+      ],
+      "Whether the disclaimer has been accepted": [
+        "Si la clause de non-responsabilit\u00e9 est accept\u00e9e"
+      ],
+      "Whether the font is available and enabled": [
+        "Si la police de caract\u00e8re est disponible et activ\u00e9e"
+      ],
+      "Whether to activate the console after creation": [
+        "Activer ou non la console apr\u00e8s sa cr\u00e9ation"
+      ],
+      "Whether to activate the console widget": [
+        "Activer ou non le widget console"
+      ],
+      "Whether to activate the notebook after execution": [
+        "Activer ou non le notebook apr\u00e8s l'ex\u00e9cution"
+      ],
+      "Whether to activate the widget": [
+        "Activer ou non le widget"
+      ],
+      "Whether to avoid showing the browser": [
+        "Si vous ne souhaitez pas afficher le navigateur"
+      ],
+      "Whether to avoid showing the file browser": [
+        "Si vous ne voulez pas afficher le navigateur de fichiers"
+      ],
+      "Whether to enable word wrap": [
+        "Activer ou non le retour \u00e0 la ligne de mots"
+      ],
       "Whether to fetch completions %1 provider.": [
         "R\u00e9cup\u00e9rer ou non les suggestions du fournisseur %1."
+      ],
+      "Whether to force the toggle state": [
+        "Forcer ou non l'\u00e9tat de bascule"
+      ],
+      "Whether to hide the label": [
+        "Masquer ou non le libell\u00e9"
+      ],
+      "Whether to log an error if a command is not enabled": [
+        "Enregistrer ou non une erreur si une commande n'est pas activ\u00e9e"
+      ],
+      "Whether to refresh the inspector": [
+        "Actualiser ou non l'inspecteur"
+      ],
+      "Whether to reload the page after resetting": [
+        "Recharger ou non la page apr\u00e8s r\u00e9initialisation"
       ],
       "Whether to show completions in the middle of the code line from %1 provider on typing.": [
         "Afficher/Masquer les compl\u00e9tions au milieu de la ligne de code du fournisseur %1 lors de la saisie."
@@ -4333,6 +4843,27 @@
       ],
       "Workspace": [
         "Espace de travail"
+      ],
+      "Workspace identifier for the new workspace": [
+        "Identifiant pour le nouvel espace de travail"
+      ],
+      "Workspace identifier to clone": [
+        "Identifiant de l'espace de travail \u00e0 dupliquer"
+      ],
+      "Workspace identifier to delete": [
+        "Identifiant de l'espace de travail \u00e0 supprimer"
+      ],
+      "Workspace identifier to export": [
+        "Identifiant de l'espace de travail \u00e0 exporter"
+      ],
+      "Workspace identifier to open": [
+        "Identifiant de l'espace de travail \u00e0 ouvrir"
+      ],
+      "Workspace identifier to rename": [
+        "Identifiant de l'espace de travail \u00e0 renommer"
+      ],
+      "Workspace identifier to reset": [
+        "Identifiant de l'espace de travail \u00e0 r\u00e9initialiser"
       ],
       "Workspace loader": [
         "Chargeur d'espace de travail"
@@ -4486,6 +5017,9 @@
       ],
       "menu\u0004Appearance": [
         "Apparence"
+      ],
+      "menu\u0004Code Folding": [
+        "Pliage du code"
       ],
       "menu\u0004Connected Sessions\u2026": [
         "Sessions connect\u00e9es\u2026"
@@ -5000,6 +5534,9 @@
       "settings\u0004'defer': Improve loading time - Wait for idle CPU cycles to attach out of viewport cells - 'full': Best performance with side effects - Attach to the DOM only cells in viewport - 'none': Worst performance without side effects - Attach all cells to the viewport": [
         "'defer': Am\u00e9liore le temps de chargement - Attend que le processeur soit inactif pour rendre les cellules - 'full' : Meilleure performance avec effets secondaires - Attache au DOM uniquement les cellules visibles - 'none' : Pire performance sans effets secondaires - Attache toutes les cellules"
       ],
+      "settings\u0004- 'defer': Improve loading time - Wait for idle CPU cycles to attach out of viewport cells\n- 'full': Best performance with side effects - Attach to the DOM only cells in viewport\n- 'none': Worst performance without side effects - Attach all cells to the viewport\n- 'contentVisibility': Browser-optimized rendering - Use content-visibility to skip offscreen cells": [
+        "- 'defer': Am\u00e9liore le temps de chargement - Attend que le processeur soit inactif pour rendre les cellules\n- 'full' : Meilleure performance avec effets secondaires - Attache au DOM uniquement les cellules visibles\n- 'none' : Pire performance sans effets secondaires - Attache toutes les cellules\n- 'contentVisbility': Rendu optimis\u00e9 par le navigateur - Utilise 'content-visibility' pour omettre les cellules non visibles"
+      ],
       "settings\u0004A regular expression filter to apply by default when showing the kernel sources": [
         "Une expression r\u00e9guli\u00e8re filtrant par d\u00e9faut les sources du noyau affich\u00e9es"
       ],
@@ -5014,6 +5551,15 @@
       ],
       "settings\u0004Add accessibility elements for use with screen readers.": [
         "Ajouter des \u00e9l\u00e9ments d'accessibilit\u00e9 \u00e0 utiliser avec les lecteurs d'\u00e9cran."
+      ],
+      "settings\u0004Add extra line when merging cells": [
+        "Ajouter une ligne suppl\u00e9mentaire lors de la fusion de cellules"
+      ],
+      "settings\u0004Additional plugins to skip in settings editor": [
+        "Plugins suppl\u00e9mentaires \u00e0 ignorer dans l'\u00e9diteur de param\u00e8tres"
+      ],
+      "settings\u0004Allow file uploads": [
+        "Autoriser le t\u00e9l\u00e9versement des fichiers"
       ],
       "settings\u0004Allow named properties": [
         "Autoriser les propri\u00e9t\u00e9s nomm\u00e9es"
@@ -5057,6 +5603,9 @@
       "settings\u0004Auto Collapse Debugger Sidebar": [
         "R\u00e9duire automatiquement le panneau lat\u00e9ral du d\u00e9bogueur"
       ],
+      "settings\u0004Auto-open uploads": [
+        "Ouvrir automatiquement les t\u00e9l\u00e9versements"
+      ],
       "settings\u0004Autocompletion setting.": [
         "Options de la compl\u00e9tion automatique."
       ],
@@ -5065,6 +5614,9 @@
       ],
       "settings\u0004Automatically Start Preferred Kernel": [
         "D\u00e9marrer automatiquement le noyau pr\u00e9f\u00e9r\u00e9"
+      ],
+      "settings\u0004Automatically open uploaded notebooks and supported files": [
+        "Ouvrir automatiquement les notebooks t\u00e9l\u00e9vers\u00e9s et les fichiers support\u00e9s"
       ],
       "settings\u0004Automatically render markdown when cursor leaves markdown cells": [
         "Rendre automatiquement le markdown lorsque le curseur quitte les cellules markdown"
@@ -5086,6 +5638,9 @@
       ],
       "settings\u0004Bottom": [
         "En bas"
+      ],
+      "settings\u0004Breadcrumbs": [
+        "Chemin des fichiers"
       ],
       "settings\u0004CSV Viewer": [
         "Visionneuse CSV"
@@ -5144,11 +5699,20 @@
       "settings\u0004Console panel toolbar items": [
         "\u00c9l\u00e9ments de la barre d'outils de la console"
       ],
+      "settings\u0004Critical": [
+        "Critique"
+      ],
       "settings\u0004Customize shell widget positioning": [
         "Personnaliser le positionnement des widgets"
       ],
+      "settings\u0004Debug": [
+        "D\u00e9bogage"
+      ],
       "settings\u0004Debugger": [
         "D\u00e9bogueur"
+      ],
+      "settings\u0004Default Log Level": [
+        "Niveau de journal par d\u00e9faut"
       ],
       "settings\u0004Default Viewers": [
         "Visionneurs par d\u00e9faut"
@@ -5161,6 +5725,9 @@
       ],
       "settings\u0004Default kernel sources regexp filter": [
         "Expression r\u00e9guli\u00e8re par d\u00e9faut pour filtrer les sources du noyau"
+      ],
+      "settings\u0004Default log level for loggers": [
+        "Niveau de notifications par d\u00e9faut pour les journaux"
       ],
       "settings\u0004Default timeout for a provider.": [
         "D\u00e9lai par d\u00e9faut pour un compl\u00e9teur."
@@ -5243,6 +5810,9 @@
       "settings\u0004Enables the undo/redo actions at the notebook document level; aka undoing within a cell may undo the latest notebook change that happen in another cell. This is deprecated and will be removed in 5.0.0.": [
         "Active les actions d'annulation/de r\u00e9p\u00e9tition au niveau du notebook ; l'annulation dans une cellule peut annuler le dernier changement de notebook qui se produit dans une autre cellule. Ceci est obsol\u00e8te et sera supprim\u00e9 en 5.0.0."
       ],
+      "settings\u0004Error": [
+        "Erreur"
+      ],
       "settings\u0004Extension Manager": [
         "Gestionnaire d'extensions"
       ],
@@ -5315,6 +5885,9 @@
       "settings\u0004If defined, it will override the command label": [
         "Si d\u00e9finie, cela remplacera le libell\u00e9 de la commande"
       ],
+      "settings\u0004If enabled, displays a button that scrolls to the currently executing cell or, if none, the most recently executed cell. scrolls to the currently executing cell or, if none, the most recently executed cell. The button shows when hovering over the kernel execution indicator. Enabling this option automatically enables recording of execution timing metadata.": [
+        "Si activ\u00e9, affiche un bouton qui d\u00e9file vers la cellule en cours d'ex\u00e9cution ou, si \"none\", la derni\u00e8re cellule ex\u00e9cut\u00e9e. Fait d\u00e9filer jusqu'\u00e0 la cellule en cours d'ex\u00e9cution ou, si \"none\", la derni\u00e8re cellule ex\u00e9cut\u00e9e. Le bouton s'affiche lors du survol de l'indicateur d'ex\u00e9cution du noyau. L'activation de cette option permet automatiquement l'enregistrement des m\u00e9tadonn\u00e9es de synchronisation d'ex\u00e9cution."
+      ],
       "settings\u0004If set to true, a button is shown below collapsed headings, indicating how many cells are hidden beneath the collapsed heading.": [
         "Si activ\u00e9, un bouton est affich\u00e9 sous les titres r\u00e9duits, indiquant le nombre de cellules cach\u00e9es sous le titre."
       ],
@@ -5326,6 +5899,9 @@
       ],
       "settings\u0004Include cell output in headings": [
         "Inclure la sortie de cellule dans les en-t\u00eates"
+      ],
+      "settings\u0004Info": [
+        "Information"
       ],
       "settings\u0004Inline Completer": [
         "Compl\u00e9teur des \u00e9diteurs"
@@ -5405,6 +5981,9 @@
       "settings\u0004Line height": [
         "Hauteur de ligne"
       ],
+      "settings\u0004List of additional plugin IDs that should not be displayed in the settings editor. These plugins can still be configured programmatically or via overrides.json. Note: Some core plugins like context-menu and main-menu are always hidden and cannot be made visible.": [
+        "Liste des ID de plugins suppl\u00e9mentaires \u00e0 cacher dans l'\u00e9diteur de param\u00e8tres. Ces plugins peuvent toujours \u00eatre configur\u00e9s par le programme ou via le fichier de personnalisation \"overrides.json\". Note : Certains plugins de base comme le menu contextuel et le menu principal sont toujours cach\u00e9s et ne peuvent pas \u00eatre rendus visibles."
+      ],
       "settings\u0004List of toolbar items": [
         "Liste des \u00e9l\u00e9ments de la barre d'outils"
       ],
@@ -5416,6 +5995,9 @@
       ],
       "settings\u0004Log communication": [
         "Journal de communication"
+      ],
+      "settings\u0004Log console toolbar items": [
+        "\u00c9l\u00e9ments de la barre d'outils de la console de journal"
       ],
       "settings\u0004Log entry count limit": [
         "Limite de nombre d'entr\u00e9e de journal"
@@ -5432,8 +6014,14 @@
       "settings\u0004Max acceptable difference, in milliseconds, between last modified timestamps on disk and client": [
         "Diff\u00e9rence maximale acceptable, en millisecondes, entre l'instant de la derni\u00e8re modification sur le disque et dans le client"
       ],
+      "settings\u0004Max auto-open size": [
+        "Taille maximale d'ouverture automatique"
+      ],
       "settings\u0004Maximal headings depth": [
         "Profondeur maximale des titres"
+      ],
+      "settings\u0004Maximum file size (MB) to auto-open files on upload": [
+        "Taille maximale du fichier (Mo) pour ouvrir automatiquement les fichiers lors du t\u00e9l\u00e9versement"
       ],
       "settings\u0004Maximum number of log entries to store in memory": [
         "Nombre maximum d'entr\u00e9es de journal \u00e0 stocker en m\u00e9moire"
@@ -5452,6 +6040,18 @@
       ],
       "settings\u0004Menu unique id": [
         "Identifiant unique du menu"
+      ],
+      "settings\u0004Minimum breadcrumbs left items": [
+        "Nombre minimum d'\u00e9l\u00e9ments au d\u00e9but du chemin des fichiers"
+      ],
+      "settings\u0004Minimum breadcrumbs right items": [
+        "Nombre minimum d'\u00e9l\u00e9ments \u00e0 la fin du chemin des fichiers"
+      ],
+      "settings\u0004Minimum number of directory items to display on the left side of the breadcrumbs ellipsis": [
+        "Nombre minimum de r\u00e9pertoires \u00e0 afficher au d\u00e9but du chemin des fichiers"
+      ],
+      "settings\u0004Minimum number of directory items to display on the right side of the breadcrumbs ellipsis": [
+        "Nombre minimum de r\u00e9pertoires \u00e0 afficher \u00e0 la fin du chemin des fichiers"
       ],
       "settings\u0004Mnemonic index for the label": [
         "Index mn\u00e9monique de l'\u00e9tiquette"
@@ -5485,6 +6085,9 @@
       ],
       "settings\u0004Note: To disable a toolbar item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable the Interrupt button item:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"interrupt\",\n      \"disabled\": true\n    }\n  ]\n}\n\nToolbar description:": [
         "Remarque : Pour d\u00e9sactiver un \u00e9l\u00e9ment de la barre d'outils,\ncopiez-le dans les pr\u00e9f\u00e9rences utilisateur et ajoutez l'attribut\n\"disabled\". L'exemple suivant d\u00e9sactivera le bouton pour interrompre l'ex\u00e9cution:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"interrupt\",\n      \"disabled\": true\n    }\n  ]\n}\n\nDescription de la barre d'outils :"
+      ],
+      "settings\u0004Note: To disable a toolbar item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable the clear button:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"clear\",\n      \"disabled\": true\n    }\n  ]\n}\n\nToolbar description:": [
+        "Remarque : Pour d\u00e9sactiver un \u00e9l\u00e9ment de la barre d'outils,\ncopiez-le dans les pr\u00e9f\u00e9rences utilisateur et ajoutez l'attribut\n\"disabled\". L'exemple suivant d\u00e9sactivera le bouton pour effacer:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"clear\",\n      \"disabled\": true\n    }\n  ]\n}\n\nDescription de la barre d'outils :"
       ],
       "settings\u0004Note: To disable a toolbar item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable the delimiter selector item:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"delimiter\",\n      \"disabled\": true\n    }\n  ]\n}\n\nToolbar description:": [
         "Remarque : Pour d\u00e9sactiver un \u00e9l\u00e9ment de la barre d'outils,\ncopiez-le dans les pr\u00e9f\u00e9rences utilisateur et ajoutez l'attribut\n\"disabled\". L'exemple suivant d\u00e9sactivera le s\u00e9lecteur du caract\u00e8re de d\u00e9limitation:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"delimiter\",\n      \"disabled\": true\n    }\n  ]\n}\n\nDescription de la barre d'outils :"
@@ -5545,6 +6148,12 @@
       ],
       "settings\u0004Paste with Ctrl+V": [
         "Coller avec Ctrl+V"
+      ],
+      "settings\u0004Plugin ID": [
+        "ID du plugin"
+      ],
+      "settings\u0004Plugin ID to skip": [
+        "ID du plugin \u00e0 ignorer"
       ],
       "settings\u0004Preferred Dark Theme": [
         "Pr\u00e9f\u00e8rer le th\u00e8me sombre"
@@ -5627,6 +6236,9 @@
       "settings\u0004Set the type of editor to use while editing your settings.": [
         "D\u00e9finissez le type d'\u00e9diteur \u00e0 utiliser lors de l'\u00e9dition de vos param\u00e8tres."
       ],
+      "settings\u0004Settings related to breadcrumbs display and behavior.": [
+        "Param\u00e8tres relatifs \u00e0 l'affichage et au comportement du chemin de fichiers."
+      ],
       "settings\u0004Should an editor be shown for read-only markdown": [
         "Un \u00e9diteur doit-il \u00eatre affich\u00e9 pour le markdown en lecture seule"
       ],
@@ -5639,8 +6251,14 @@
       "settings\u0004Show Banner": [
         "Afficher la banni\u00e8re"
       ],
+      "settings\u0004Show Paused Overlay": [
+        "Afficher le voile lors du d\u00e9bogage"
+      ],
       "settings\u0004Show a toolbar inside the active cell, if there is enough room for one": [
         "Afficher une barre d'outils \u00e0 l'int\u00e9rieur de la cellule active, s'il y a assez d'espace disponible"
+      ],
+      "settings\u0004Show an overlay on the editor or notebook when execution is paused in the debugger.": [
+        "Afficher un voile sur l'\u00e9diteur ou le notebook lorsque l'ex\u00e9cution est mise en pause dans le d\u00e9bogueur."
       ],
       "settings\u0004Show cell toolbar": [
         "Afficher la barre d'outils des cellules"
@@ -5669,11 +6287,17 @@
       "settings\u0004Show input placeholder": [
         "Afficher la suggestion dans le champ de saisie"
       ],
+      "settings\u0004Show jump to most recently executed/executing cell button": [
+        "Afficher le bouton pour aller \u00e0 la derni\u00e8re cellule ex\u00e9cut\u00e9e ou en cours d'ex\u00e9cution"
+      ],
       "settings\u0004Show kernel status on toolbar or status bar.": [
         "Afficher l'\u00e9tat du noyau sur la barre d'outils ou la barre d'\u00e9tat."
       ],
       "settings\u0004Show last modified column": [
         "Afficher la derni\u00e8re colonne modifi\u00e9e"
+      ],
+      "settings\u0004Show minimap": [
+        "Afficher la minicarte"
       ],
       "settings\u0004Show placeholder text for standard input fields (requires reload)": [
         "Afficher les suggestions pour les champs de saisie standard (rechargement n\u00e9cessaire)"
@@ -5894,6 +6518,9 @@
       "settings\u0004Variables to filter out in the tree and table viewers": [
         "Variables \u00e0 filtrer dans l'arborescence et les tableaux"
       ],
+      "settings\u0004Warning": [
+        "Avertissement"
+      ],
       "settings\u0004When an inline completion gets cancelled the editor may change its size rapidly. When typing in the editor, the completions may get dismissed frequently causing a noticeable jitter of the editor height. Adding a delay prevents the jitter on typing. The value should be in milliseconds.": [
         "Lorsqu'une compl\u00e9tion en ligne est annul\u00e9e, l'\u00e9diteur peut modifier sa taille rapidement. Lorsque vous tapez dans l'\u00e9diteur, les compl\u00e9tions peuvent \u00eatre rejet\u00e9es fr\u00e9quemment, causant des variations notables de la hauteur de l'\u00e9diteur. Ajouter un d\u00e9lai en millisecondes emp\u00eache le jitter lors de la frappe."
       ],
@@ -5948,11 +6575,17 @@
       "settings\u0004Whether the user agrees the access to external web services and understands extensions may introduce security risks or contain malicious code that runs on his machine.": [
         "L'utilisateur accepte-t-il l'acc\u00e8s \u00e0 des services web externes et comprend-il que les extensions peuvent introduire des risques de s\u00e9curit\u00e9 ou contenir du code malveillant qui s'ex\u00e9cute sur sa machine?"
       ],
+      "settings\u0004Whether to add an extra blank line between cells when merging them. When enabled, cells are joined with double newlines. When disabled, cells are joined with single newlines.": [
+        "Ajoute ou non une ligne vide entre les cellules lors de leur fusion. Lorsque cette option est activ\u00e9e, les cellules sont jointes avec deux nouvelles lignes. Sinon les cellules sont jointes avec une seule nouvelle ligne."
+      ],
       "settings\u0004Whether to allow single click selection on file browser items": [
         "S\u00e9lectionner sur un simple clic, les \u00e9l\u00e9ments du navigateur de fichiers"
       ],
       "settings\u0004Whether to allow untrusted elements to include `name` and `id` attributes. These attributes are stripped by default to prevent DOM clobbering attacks.": [
         "Autoriser les balises HTML non-fiables \u00e0 inclure les attributs `name` et `id`. Ces attributs sont supprim\u00e9s par d\u00e9faut pour emp\u00eacher les attaques de clobbering DOM."
+      ],
+      "settings\u0004Whether to allow uploading files": [
+        "Autoriser ou non le t\u00e9l\u00e9versement de fichiers"
       ],
       "settings\u0004Whether to apply fuzzy algorithm while filtering on file names": [
         "Appliquer ou non un algorithme flou lors du filtrage sur les noms de fichiers"
@@ -6073,6 +6706,9 @@
       ],
       "settings\u0004Whether to show the last modified column": [
         "Afficher/Masquer la derni\u00e8re colonne modifi\u00e9e"
+      ],
+      "settings\u0004Whether to show the notebook minimap (virtual scrollbar) by default for all notebooks.": [
+        "Afficher/Masquer la minimap du notebook (barre de d\u00e9filement virtuelle) par d\u00e9faut pour tous les notebooks."
       ],
       "settings\u0004Whether to show the running kernels item in the status bar": [
         "Afficher/Masquer les noyaux en cours d'ex\u00e9cution dans la barre d'\u00e9tat"
@@ -7028,6 +7664,9 @@
       "Not in a Git repository. Unable to add a remote.": [
         "Pas dans un d\u00e9p\u00f4t Git. Impossible d'ajouter un d\u00e9p\u00f4t distant."
       ],
+      "OK": [
+        "OK"
+      ],
       "One or more open files are behind %1 head. Do you want to pull the latest remote version?": [
         "Un ou plusieurs fichiers ouverts sont derri\u00e8re la t\u00eate de %1 . Voulez-vous r\u00e9cup\u00e9rer la derni\u00e8re version distante ?"
       ],
@@ -7430,6 +8069,9 @@
       "The following open files remain behind:": [
         "Les fichiers ouverts suivants ne sont pas \u00e0 jour :"
       ],
+      "The host %1 is not known. Would you like to add it to the known_hosts file?": [
+        "L'h\u00f4te %1 n'est pas connu. Voulez-vous l'ajouter au fichier \"known_hosts\" ?"
+      ],
       "The repository contains files with uncommitted changes. Please commit or discard these changes before switching to a tag.": [
         "La branche actuelle contient des fichiers avec des modifications non soumises. Veuillez soumettre ou annuler ces modifications avant de basculer vers une \u00e9tiquette."
       ],
@@ -7480,6 +8122,9 @@
       ],
       "Unfolded lines": [
         "Lignes d\u00e9pli\u00e9es"
+      ],
+      "Unknown Host": [
+        "H\u00f4te inconnu"
       ],
       "Unmodified": [
         "Non modifi\u00e9"
@@ -9476,6 +10121,9 @@
       "schema\u0004Jupyter Notebook Pages": [
         "Pages du Jupyter Notebook"
       ],
+      "schema\u0004Jupyter Notebook Shortcuts": [
+        "Raccourcis Jupyter Notebook"
+      ],
       "schema\u0004Jupyter Notebook Top Area": [
         "Zone sup\u00e9rieure de Jupyter Notebook"
       ],
@@ -9490,6 +10138,9 @@
       ],
       "schema\u0004Kernel logo in the top area": [
         "Logo du noyau dans la zone sup\u00e9rieure"
+      ],
+      "schema\u0004Keyboard shortcuts for Jupyter Notebook": [
+        "Raccourcis clavier pour Jupyter Notebook"
       ],
       "schema\u0004Launch Shortcuts": [
         "Ouvrir les raccourcis"
@@ -9512,6 +10163,9 @@
       "settings\u0004Auto Scroll Outputs": [
         "D\u00e9filement automatique des sorties de cellules"
       ],
+      "settings\u0004Checkpoint Polling Interval (seconds)": [
+        "Intervalle de v\u00e9rification des points de contr\u00f4le (secondes)"
+      ],
       "settings\u0004Command arguments": [
         "Arguments de la commande"
       ],
@@ -9526,6 +10180,9 @@
       ],
       "settings\u0004Full Width Notebook": [
         "Notebook en pleine largeur"
+      ],
+      "settings\u0004How often to check for checkpoints (in seconds). Set to 0 to disable polling.": [
+        "Fr\u00e9quence de v\u00e9rification des points de contr\u00f4le (en secondes). Mettre 0 pour d\u00e9sactiver la v\u00e9rification."
       ],
       "settings\u0004If defined, it will override the command icon": [
         "Si d\u00e9fini, cela remplacera l'ic\u00f4ne de commande"
@@ -9550,6 +10207,9 @@
       ],
       "settings\u0004Jupyter Notebook Top Area": [
         "Zone sup\u00e9rieure de Jupyter Notebook"
+      ],
+      "settings\u0004Jupyter Notebook shortcuts": [
+        "Raccourcis Jupyter Notebook"
       ],
       "settings\u0004Note: To disable a toolbar item,\ncopy it to User Preferences and add the\n\"disabled\" key. The following example will disable the uploader button:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"uploader\",\n      \"disabled\": true\n    }\n  ]\n}\n\nToolbar description:": [
         "Remarque : Pour d\u00e9sactiver un \u00e9l\u00e9ment de la barre d'outils,\ncopiez-le dans les pr\u00e9f\u00e9rences utilisateur et ajoutez l'attribut\n\"disabled\". L'exemple suivant d\u00e9sactivera le bouton pour envoyer un fichier:\n{\n  \"toolbar\": [\n    {\n      \"name\": \"uploader\",\n      \"disabled\": true\n    }\n  ]\n}\n\nDescription de la barre d'outils :"

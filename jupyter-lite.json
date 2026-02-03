@@ -10,7 +10,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.db620b10e3b8925e7774.js",
+        "load": "static/remoteEntry.06fa288e8c5f8082f5c5.js",
         "name": "@jupyter-ai/core",
         "style": "./style"
       },
@@ -24,7 +24,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.35b6c65bd99dab37b910.js",
+        "load": "static/remoteEntry.9077b3d2deaffb329dfc.js",
         "name": "@jupyter-widgets/jupyterlab-manager"
       },
       {
@@ -70,19 +70,13 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.382ac9f028a244bc2d44.js",
-        "name": "@timkpaine/jupyterlab_miami_nights"
-      },
-      {
-        "extension": "./extension",
-        "liteExtension": false,
         "load": "static/remoteEntry.ac6ba46a96b6912c489d.js",
         "name": "bqplot"
       },
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.fb45db9d3f32bd4bc57a.js",
+        "load": "static/remoteEntry.b3a35f7d09c1698e7380.js",
         "name": "ipycanvas"
       },
       {
@@ -100,7 +94,7 @@
       {
         "extension": "./extension",
         "liteExtension": false,
-        "load": "static/remoteEntry.95a2c52adea5b580b11d.js",
+        "load": "static/remoteEntry.26389e69be95e1a47195.js",
         "name": "jupyter-matplotlib"
       },
       {
@@ -122,6 +116,12 @@
         "load": "static/remoteEntry.c6c768d682b3638efd6b.js",
         "mimeExtension": "./mimeExtension",
         "name": "jupyterlab-plotly"
+      },
+      {
+        "extension": "./extension",
+        "liteExtension": false,
+        "load": "static/remoteEntry.b83ceedda67c8fb0f343.js",
+        "name": "jupyterlab_miami_nights"
       },
       {
         "extension": "./extension",
