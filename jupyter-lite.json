@@ -1,13 +1,6 @@
 {
-  "jupyter-lite-schema-version": 0,
-  "jupyter-config-data": {
-    "baseUrl": "/slmat/",
-    "terminalsAvailable": true,
-    "appName": "SLakoNet Materials",
-    "appVersion": "0.1.0",
-    "contentsStorageName": "slmat-contents",
-    "settingsStorageName": "slmat-settings",
-    "disabledExtensions": [],
-    "collaborative": false
+  "LiteBuildConfig": {
+    "base_url": "/slmat/",
+    "ignore_sys_prefix": false
   }
 }
