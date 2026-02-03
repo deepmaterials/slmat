@@ -1,13 +1,14 @@
 {
+  "LiteBuildConfig": {
+    "base_url": "/slmat/",
+    "ignore_sys_prefix": false
+  },
   "jupyter-config-data": {
-    "appName": "SLakoNet Materials",
+    "appName": "JupyterLite",
     "appUrl": "./lab",
-    "appVersion": "0.1.0",
-    "baseUrl": "/slmat/",
-    "collaborative": false,
-    "contentsStorageName": "slmat-contents",
+    "appVersion": "0.4.0",
+    "baseUrl": "./",
     "defaultKernelName": "python",
-    "disabledExtensions": [],
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
       {
@@ -416,9 +417,7 @@
           "./extensions/@jupyterlite/pyodide-kernel-extension/static/pypi/all.json?sha256=6e57b48fb2d299264f057f2f32f94af3ec2dc8436134efac11d0e8fef64adec1"
         ]
       }
-    },
-    "settingsStorageName": "slmat-settings",
-    "terminalsAvailable": true
+    }
   },
   "jupyter-lite-schema-version": 0
 }
