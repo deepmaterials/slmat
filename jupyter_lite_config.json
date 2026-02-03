@@ -1,0 +1,6 @@
+{
+  "LiteBuildConfig": {
+    "base_url": "/slmat/",
+    "ignore_sys_prefix": false
+  }
+}
