@@ -1,9 +1,9 @@
 {
   "jupyter-config-data": {
-    "appName": "JupyterLite",
+    "appName": "SLakoNet Materials",
     "appUrl": "./lab",
-    "appVersion": "0.4.0",
-    "baseUrl": "./",
+    "appVersion": "0.1.0",
+    "baseUrl": "/slmat/",
     "defaultKernelName": "python",
     "faviconUrl": "./lab/favicon.ico",
     "federated_extensions": [
