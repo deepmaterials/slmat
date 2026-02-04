@@ -4,15 +4,7 @@
   "jupyter.lab.toolbars": {
     "TopBar": [{ "name": "checkpoint", "rank": 20 }]
   },
-  "properties": {
-    "checkpointPollingInterval": {
-      "type": "number",
-      "title": "Checkpoint Polling Interval (seconds)",
-      "description": "How often to check for checkpoints (in seconds). Set to 0 to disable polling.",
-      "default": 30,
-      "minimum": 0
-    }
-  },
+  "properties": {},
   "additionalProperties": false,
   "type": "object"
 }

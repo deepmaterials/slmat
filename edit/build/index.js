@@ -3,12 +3,16 @@
 
 import { NotebookApp } from '@jupyter-notebook/application';
 
+import { JupyterLiteServer } from '@jupyterlite/server';
+
 // The webpack public path needs to be set before loading the CSS assets.
 import { PageConfig } from '@jupyterlab/coreutils';
 
-import { PluginRegistry } from '@lumino/coreutils';
-
 import './style.js';
+
+const serverExtensions = [
+  import('@jupyterlite/server-extension')
+];
 
 // custom list of disabled plugins
 const disabled = [
@@ -47,21 +51,8 @@ const disabled = [
   "@jupyterlab/fileeditor-extension:editor-syntax-status",
   "@jupyterlab/help-extension:about",
   "@jupyterlab/help-extension:open",
-  "@jupyterlab/lsp-extension:plugin",
-  "@jupyterlab/notebook-extension:export",
   "@jupyterlab/notebook-extension:execution-indicator",
   "@jupyterlab/notebook-extension:kernel-status",
-  "@jupyterlab/services-extension:config-section-manager",
-  "@jupyterlab/services-extension:connection-status",
-  "@jupyterlab/services-extension:default-drive",
-  "@jupyterlab/services-extension:event-manager",
-  "@jupyterlab/services-extension:kernel-manager",
-  "@jupyterlab/services-extension:kernel-spec-manager",
-  "@jupyterlab/services-extension:nbconvert-manager",
-  "@jupyterlab/services-extension:session-manager",
-  "@jupyterlab/services-extension:setting-manager",
-  "@jupyterlab/services-extension:user-manager",
-  "@jupyterlab/services-extension:workspace-manager",
   "@jupyter-notebook/application-extension:logo",
   "@jupyter-notebook/application-extension:opener",
   "@jupyter-notebook/application-extension:path-opener",
@@ -71,9 +62,7 @@ const disabled = [
 async function createModule(scope, module) {
   try {
     const factory = await window._JUPYTERLAB[scope].get(module);
-    const instance = factory();
-    instance.__scope__ = scope;
-    return instance;
+    return factory();
   } catch (e) {
     console.warn(`Failed to create module: package: ${scope}; module: ${module}`);
     throw e;
@@ -84,11 +73,12 @@ async function createModule(scope, module) {
  * The main entry point for the application.
  */
 export async function main() {
-  const allPlugins = [];
   const pluginsToRegister = [];
   const federatedExtensionPromises = [];
   const federatedMimeExtensionPromises = [];
   const federatedStylePromises = [];
+  const litePluginsToRegister = [];
+  const liteExtensionPromises = [];
 
   // This is all the data needed to load and activate plugins. This should be
   // gathered by the server and put onto the initial page template.
@@ -100,6 +90,10 @@ export async function main() {
   const federatedExtensionNames = new Set();
 
   extensions.forEach(data => {
+    if (data.liteExtension) {
+      liteExtensionPromises.push(createModule(data.name, data.extension));
+      return;
+    }
     if (data.extension) {
       federatedExtensionNames.add(data.name);
       federatedExtensionPromises.push(createModule(data.name, data.extension));
@@ -135,10 +129,6 @@ export async function main() {
       ) {
         continue;
       }
-      allPlugins.push({
-        ...plugin,
-        extension: extension.__scope__
-      });
       yield plugin;
     }
   }
@@ -148,7 +138,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/javascript-extension')) {
     try {
       let ext = require('@jupyterlab/javascript-extension');
-      ext.__scope__ = '@jupyterlab/javascript-extension';
       for (let plugin of activePlugins(ext)) {
         mimeExtensions.push(plugin);
       }
@@ -159,7 +148,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/json-extension')) {
     try {
       let ext = require('@jupyterlab/json-extension');
-      ext.__scope__ = '@jupyterlab/json-extension';
       for (let plugin of activePlugins(ext)) {
         mimeExtensions.push(plugin);
       }
@@ -170,7 +158,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/mermaid-extension')) {
     try {
       let ext = require('@jupyterlab/mermaid-extension/lib/mime.js');
-      ext.__scope__ = '@jupyterlab/mermaid-extension';
       for (let plugin of activePlugins(ext)) {
         mimeExtensions.push(plugin);
       }
@@ -181,7 +168,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/vega5-extension')) {
     try {
       let ext = require('@jupyterlab/vega5-extension');
-      ext.__scope__ = '@jupyterlab/vega5-extension';
       for (let plugin of activePlugins(ext)) {
         mimeExtensions.push(plugin);
       }
@@ -192,7 +178,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlite/iframe-extension')) {
     try {
       let ext = require('@jupyterlite/iframe-extension');
-      ext.__scope__ = '@jupyterlite/iframe-extension';
       for (let plugin of activePlugins(ext)) {
         mimeExtensions.push(plugin);
       }
@@ -217,7 +202,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/application-extension')) {
     try {
       let ext = require('@jupyterlab/application-extension');
-      ext.__scope__ = '@jupyterlab/application-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -228,18 +212,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/apputils-extension')) {
     try {
       let ext = require('@jupyterlab/apputils-extension');
-      ext.__scope__ = '@jupyterlab/apputils-extension';
-      for (let plugin of activePlugins(ext)) {
-        pluginsToRegister.push(plugin);
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  if (!federatedExtensionNames.has('@jupyterlab/audio-extension')) {
-    try {
-      let ext = require('@jupyterlab/audio-extension');
-      ext.__scope__ = '@jupyterlab/audio-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -250,7 +222,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/cell-toolbar-extension')) {
     try {
       let ext = require('@jupyterlab/cell-toolbar-extension');
-      ext.__scope__ = '@jupyterlab/cell-toolbar-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -261,7 +232,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/codemirror-extension')) {
     try {
       let ext = require('@jupyterlab/codemirror-extension');
-      ext.__scope__ = '@jupyterlab/codemirror-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -272,7 +242,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/completer-extension')) {
     try {
       let ext = require('@jupyterlab/completer-extension');
-      ext.__scope__ = '@jupyterlab/completer-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -283,7 +252,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/console-extension')) {
     try {
       let ext = require('@jupyterlab/console-extension');
-      ext.__scope__ = '@jupyterlab/console-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -294,7 +262,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/csvviewer-extension')) {
     try {
       let ext = require('@jupyterlab/csvviewer-extension');
-      ext.__scope__ = '@jupyterlab/csvviewer-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -305,7 +272,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/docmanager-extension')) {
     try {
       let ext = require('@jupyterlab/docmanager-extension');
-      ext.__scope__ = '@jupyterlab/docmanager-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -316,7 +282,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/documentsearch-extension')) {
     try {
       let ext = require('@jupyterlab/documentsearch-extension');
-      ext.__scope__ = '@jupyterlab/documentsearch-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -327,7 +292,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/filebrowser-extension')) {
     try {
       let ext = require('@jupyterlab/filebrowser-extension');
-      ext.__scope__ = '@jupyterlab/filebrowser-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -338,7 +302,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/fileeditor-extension')) {
     try {
       let ext = require('@jupyterlab/fileeditor-extension');
-      ext.__scope__ = '@jupyterlab/fileeditor-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -349,7 +312,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/help-extension')) {
     try {
       let ext = require('@jupyterlab/help-extension');
-      ext.__scope__ = '@jupyterlab/help-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -360,7 +322,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/imageviewer-extension')) {
     try {
       let ext = require('@jupyterlab/imageviewer-extension');
-      ext.__scope__ = '@jupyterlab/imageviewer-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -371,7 +332,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/lsp-extension')) {
     try {
       let ext = require('@jupyterlab/lsp-extension');
-      ext.__scope__ = '@jupyterlab/lsp-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -382,7 +342,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/mainmenu-extension')) {
     try {
       let ext = require('@jupyterlab/mainmenu-extension');
-      ext.__scope__ = '@jupyterlab/mainmenu-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -393,7 +352,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/markdownviewer-extension')) {
     try {
       let ext = require('@jupyterlab/markdownviewer-extension');
-      ext.__scope__ = '@jupyterlab/markdownviewer-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -404,7 +362,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/markedparser-extension')) {
     try {
       let ext = require('@jupyterlab/markedparser-extension');
-      ext.__scope__ = '@jupyterlab/markedparser-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -415,7 +372,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/mathjax-extension')) {
     try {
       let ext = require('@jupyterlab/mathjax-extension');
-      ext.__scope__ = '@jupyterlab/mathjax-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -426,7 +382,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/mermaid-extension')) {
     try {
       let ext = require('@jupyterlab/mermaid-extension');
-      ext.__scope__ = '@jupyterlab/mermaid-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -437,7 +392,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/metadataform-extension')) {
     try {
       let ext = require('@jupyterlab/metadataform-extension');
-      ext.__scope__ = '@jupyterlab/metadataform-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -448,7 +402,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/notebook-extension')) {
     try {
       let ext = require('@jupyterlab/notebook-extension');
-      ext.__scope__ = '@jupyterlab/notebook-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -459,18 +412,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/rendermime-extension')) {
     try {
       let ext = require('@jupyterlab/rendermime-extension');
-      ext.__scope__ = '@jupyterlab/rendermime-extension';
-      for (let plugin of activePlugins(ext)) {
-        pluginsToRegister.push(plugin);
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  if (!federatedExtensionNames.has('@jupyterlab/services-extension')) {
-    try {
-      let ext = require('@jupyterlab/services-extension');
-      ext.__scope__ = '@jupyterlab/services-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -481,7 +422,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/shortcuts-extension')) {
     try {
       let ext = require('@jupyterlab/shortcuts-extension');
-      ext.__scope__ = '@jupyterlab/shortcuts-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -492,7 +432,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/theme-dark-extension')) {
     try {
       let ext = require('@jupyterlab/theme-dark-extension');
-      ext.__scope__ = '@jupyterlab/theme-dark-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -503,7 +442,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/theme-dark-high-contrast-extension')) {
     try {
       let ext = require('@jupyterlab/theme-dark-high-contrast-extension');
-      ext.__scope__ = '@jupyterlab/theme-dark-high-contrast-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -514,7 +452,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/theme-light-extension')) {
     try {
       let ext = require('@jupyterlab/theme-light-extension');
-      ext.__scope__ = '@jupyterlab/theme-light-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -525,7 +462,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/toc-extension')) {
     try {
       let ext = require('@jupyterlab/toc-extension');
-      ext.__scope__ = '@jupyterlab/toc-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -536,7 +472,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/tooltip-extension')) {
     try {
       let ext = require('@jupyterlab/tooltip-extension');
-      ext.__scope__ = '@jupyterlab/tooltip-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -547,7 +482,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/translation-extension')) {
     try {
       let ext = require('@jupyterlab/translation-extension');
-      ext.__scope__ = '@jupyterlab/translation-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -558,18 +492,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlab/ui-components-extension')) {
     try {
       let ext = require('@jupyterlab/ui-components-extension');
-      ext.__scope__ = '@jupyterlab/ui-components-extension';
-      for (let plugin of activePlugins(ext)) {
-        pluginsToRegister.push(plugin);
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  if (!federatedExtensionNames.has('@jupyterlab/video-extension')) {
-    try {
-      let ext = require('@jupyterlab/video-extension');
-      ext.__scope__ = '@jupyterlab/video-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -580,7 +502,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyter-notebook/application-extension')) {
     try {
       let ext = require('@jupyter-notebook/application-extension');
-      ext.__scope__ = '@jupyter-notebook/application-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -591,7 +512,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyter-notebook/docmanager-extension')) {
     try {
       let ext = require('@jupyter-notebook/docmanager-extension');
-      ext.__scope__ = '@jupyter-notebook/docmanager-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -602,7 +522,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyter-notebook/help-extension')) {
     try {
       let ext = require('@jupyter-notebook/help-extension');
-      ext.__scope__ = '@jupyter-notebook/help-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -613,7 +532,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyter-notebook/notebook-extension')) {
     try {
       let ext = require('@jupyter-notebook/notebook-extension');
-      ext.__scope__ = '@jupyter-notebook/notebook-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -624,18 +542,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlite/application-extension')) {
     try {
       let ext = require('@jupyterlite/application-extension');
-      ext.__scope__ = '@jupyterlite/application-extension';
-      for (let plugin of activePlugins(ext)) {
-        pluginsToRegister.push(plugin);
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  if (!federatedExtensionNames.has('@jupyterlite/apputils-extension')) {
-    try {
-      let ext = require('@jupyterlite/apputils-extension');
-      ext.__scope__ = '@jupyterlite/apputils-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -646,18 +552,6 @@ export async function main() {
   if (!federatedExtensionNames.has('@jupyterlite/notebook-application-extension')) {
     try {
       let ext = require('@jupyterlite/notebook-application-extension');
-      ext.__scope__ = '@jupyterlite/notebook-application-extension';
-      for (let plugin of activePlugins(ext)) {
-        pluginsToRegister.push(plugin);
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  }
-  if (!federatedExtensionNames.has('@jupyterlite/services-extension')) {
-    try {
-      let ext = require('@jupyterlite/services-extension');
-      ext.__scope__ = '@jupyterlite/services-extension';
       for (let plugin of activePlugins(ext)) {
         pluginsToRegister.push(plugin);
       }
@@ -678,29 +572,48 @@ export async function main() {
     }
   });
 
+  // Add the base serverlite extensions
+  const baseServerExtensions = await Promise.all(serverExtensions);
+  baseServerExtensions.forEach(p => {
+    for (let plugin of activePlugins(p)) {
+      litePluginsToRegister.push(plugin);
+    }
+  })
+
+  // Add the serverlite federated extensions.
+  const federatedLiteExtensions = await Promise.allSettled(liteExtensionPromises);
+  federatedLiteExtensions.forEach(p => {
+    if (p.status === "fulfilled") {
+      for (let plugin of activePlugins(p.value)) {
+        litePluginsToRegister.push(plugin);
+      }
+    } else {
+      console.error(p.reason);
+    }
+  });
+
   // Load all federated component styles and log errors for any that do not
   (await Promise.allSettled(federatedStylePromises)).filter(({status}) => status === "rejected").forEach(({reason}) => {
      console.error(reason);
     });
 
-  // 1. Create a plugin registry
-  const pluginRegistry = new PluginRegistry();
+  // create the in-browser JupyterLite Server
+  const jupyterLiteServer = new JupyterLiteServer({});
+  jupyterLiteServer.registerPluginModules(litePluginsToRegister);
+  // start the server
+  await jupyterLiteServer.start();
 
-  // 2. Register the plugins
-  pluginRegistry.registerPlugins(pluginsToRegister);
+  // retrieve the custom service manager from the server app
+  const { serviceManager } = jupyterLiteServer;
 
-  // 3. Get and resolve the service manager and connection status plugins
-  const IServiceManager = require('@jupyterlab/services').IServiceManager;
-  const serviceManager = await pluginRegistry.resolveRequiredService(IServiceManager);
-
-  // create the application
+  // create a full-blown JupyterLab frontend
   const app = new NotebookApp({
-    pluginRegistry,
     mimeExtensions,
-    serviceManager,
-    availablePlugins: allPlugins
+    serviceManager
   });
   app.name = PageConfig.getOption('appName') || 'JupyterLite';
+
+  app.registerPluginModules(pluginsToRegister);
 
   // Expose global app instance when in dev mode or when toggled explicitly.
   const exposeAppInBrowser =
@@ -710,7 +623,7 @@ export async function main() {
     window.jupyterapp = app;
   }
 
-  // 4. Start the application, which will activate the other plugins
-  await app.start({ bubblingKeydown: true });
+  /* eslint-disable no-console */
+  await app.start();
   await app.restored;
 }

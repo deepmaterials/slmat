@@ -83,15 +83,6 @@ all of MD as it is not optimized for dense, information rich UIs.
     0 24px 38px 3px var(--jp-shadow-penumbra-color),
     0 9px 46px 8px var(--jp-shadow-ambient-color);
 
-  /* shortcut buttons
-   *
-   * The following css variables are used to specify the visual
-   * styling of the keyboard shortcut buttons
-   */
-
-  --jp-shortcuts-button-background: var(--jp-brand-color2);
-  --jp-shortcuts-button-hover-background: var(--jp-brand-color1);
-
   /* Borders
    *
    * The following variables, specify the visual styling of borders in JupyterLab.
@@ -300,17 +291,6 @@ all of MD as it is not optimized for dense, information rich UIs.
       var(--jp-code-padding) - var(--jp-cell-padding) - 1px
   );
 
-  /* The scroll padding is calculated to provide enough space at the bottom of
-     a text editor to allow the last line of code to be positioned at the top
-     of the viewport when the editor is scrolled all the way down. We also
-     subtract one pixel to avoid showing a scrollbar when the file contains
-     only a single line. This padding enables a 'scroll past end' feature in
-     text editors. */
-  --jp-editor-scroll-padding: calc(
-    100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
-      var(--jp-code-padding) - 1px
-  );
-
   /* Rendermime styles */
 
   --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
@@ -365,7 +345,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-variable-3-color: var(--md-green-600, #43a047);
   --jp-mirror-editor-punctuation-color: var(--md-blue-400, #42a5f5);
   --jp-mirror-editor-property-color: var(--md-blue-400, #42a5f5);
-  --jp-mirror-editor-operator-color: #d48fff;
+  --jp-mirror-editor-operator-color: #a2f;
   --jp-mirror-editor-comment-color: #408080;
   --jp-mirror-editor-string-color: #ff7070;
   --jp-mirror-editor-string-2-color: var(--md-purple-300, #ba68c8);
@@ -459,39 +439,23 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-switch-true-position-color: var(--md-orange-700, #f57c00);
 }
 
-/* Completer specific styles */
-
-.jp-Completer {
-  --jp-completer-type-background0: transparent;
-  --jp-completer-type-background1: #1f77b4;
-  --jp-completer-type-background2: #ff7f0e;
-  --jp-completer-type-background3: #2ca02c;
-  --jp-completer-type-background4: #d62728;
-  --jp-completer-type-background5: #9467bd;
-  --jp-completer-type-background6: #8c564b;
-  --jp-completer-type-background7: #e377c2;
-  --jp-completer-type-background8: #7f7f7f;
-  --jp-completer-type-background9: #bcbd22;
-  --jp-completer-type-background10: #17becf;
-}
-
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
 |----------------------------------------------------------------------------*/
 
 /* Set the default typography for monospace elements */
-.jp-ThemedContainer tt,
-.jp-ThemedContainer code,
-.jp-ThemedContainer kbd,
-.jp-ThemedContainer samp,
-.jp-ThemedContainer pre {
+tt,
+code,
+kbd,
+samp,
+pre {
   font-family: var(--jp-code-font-family);
   font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
 }
 
-/* fix illegible yellow background in exception stacktrace */
+/* fix illegible yellow backround in exception stacktrace */
 :where(
     .jp-RenderedText[data-mime-type='application/vnd.jupyter.stderr']
       pre
