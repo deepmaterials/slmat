@@ -2,10 +2,8 @@
   "jupyter-config-data": {
     "appName": "SLakoNet Materials",
     "appUrl": "./lab",
-    "appVersion": "0.1.0",
-    "baseUrl": "/slmat/",
-    "collaborative": false,
-    "contentsStorageName": "slmat-contents",
+    "appVersion": "0.4.0",
+    "baseUrl": "./",
     "defaultKernelName": "python",
     "disabledExtensions": [],
     "faviconUrl": "./lab/favicon.ico",
@@ -314,8 +312,7 @@
         ]
       }
     },
-    "settingsStorageName": "slmat-settings",
-    "terminalsAvailable": true
+    "terminalsAvailable": false
   },
   "jupyter-lite-schema-version": 0
 }
